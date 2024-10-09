@@ -16,55 +16,123 @@ public class HelperTest {
     }
 
 
-    /**
-     * Test of MontlyPayment method, of class Helper.
+     /**
+     * Test of isPositiveNumber method, of class Helper.
      */
     @Test
-    public void testMonthlyPayment() {
-        System.out.println("monthlyPayment");
-
-        // Test inputs
-        double loanAmount = 10000.0; // $10,000 loan
-        double annualInterestRate = 5.0; // 5% annual interest rate
-        int numberOfYears = 2; // 2-year loan duration
-
-        // Expected result (use a calculator or manual calculation to get this)
-        double expResult = 438.71; // Assuming monthly payment is $438.71
-
-        // Actual result from the method
-        double result = Helper.monthlyPayment(loanAmount, annualInterestRate, numberOfYears);
-
-        // Assertion to check if the result matches the expected value
-        assertEquals(expResult, result, 0.01); // Allowing a small margin of error (0.01)
-
-        // If everything is correct, no need to fail the test
-        // fail("The test case is a prototype."); // Remove or comment out this line
+    public void testIsPositiveNumber() {
+        System.out.println("isPositiveNumber - empty string");
+        String num = "";
+        boolean expResult = false;
+        boolean result = Helper.isPositiveNumber(num);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    
+    @Test
+    public void testIsPositiveNumberValid() {
+        System.out.println("isPositiveNumber - valid positive number");
+        String num = "10";
+        boolean expResult = true;
+        boolean result = Helper.isPositiveNumber(num);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testIsPositiveNumberZero() {
+        System.out.println("isPositiveNumber - zero");
+        String num = "0";
+        boolean expResult = false;
+        boolean result = Helper.isPositiveNumber(num);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testIsPositiveNumberNegative() {
+        System.out.println("isPositiveNumber - negative number");
+        String num = "-5";
+        boolean expResult = false;
+        boolean result = Helper.isPositiveNumber(num);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testIsPositiveNumberNonNumeric() {
+        System.out.println("isPositiveNumber - non-numeric string");
+        String num = "abc";
+        boolean expResult = false;
+        boolean result = Helper.isPositiveNumber(num);
+        assertEquals(expResult, result);
     }
 
     /**
-     * Test of MontlyPayment method, of class Helper.
+     * Test of inRange method, of class Helper.
      */
     @Test
-    public void testMonthlyPayment2() {
-        System.out.println("monthlyPayment");
-
-        // Test inputs
-        double loanAmount = 200000.0; // $10,000 loan
-        double annualInterestRate = 6.0; // 5% annual interest rate
-        int numberOfYears = 15; // 2-year loan duration
-
-        // Expected result (use a calculator or manual calculation to get this)
-        double expResult = 1687.71; // Assuming monthly payment is $438.71
-
-        // Actual result from the method
-        double result = Helper.monthlyPayment(loanAmount, annualInterestRate, numberOfYears);
-
-        // Assertion to check if the result matches the expected value
-        assertEquals(expResult, result, 0.01); // Allowing a small margin of error (0.01)
-
-        // If everything is correct, no need to fail the test
-        // fail("The test case is a prototype."); // Remove or comment out this line
+    public void testInRangeWithinLimit() {
+        System.out.println("inRange - number within range");
+        double num = 500.0;
+        double max = 1000.0;
+        boolean expResult = true;
+        boolean result = Helper.inRange(num, max);
+        assertEquals(expResult, result);
+    }
+    
+     @Test
+    public void testInRangeEqualToMax() {
+        System.out.println("inRange - number equal to max");
+        double num = 999999999.0;
+        double max = 999999999.0;
+        boolean expResult = true;
+        boolean result = Helper.inRange(num, max);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testInRangeExceedsMax() {
+        System.out.println("inRange - number exceeds max");
+        double num = 1000000000.0;
+        double max = 999999999.0;
+        boolean expResult = false;
+        boolean result = Helper.inRange(num, max);
+        assertEquals(expResult, result);
     }
 
+    /**
+     * Test of calcMonthlyPayment method, of class Helper.
+     */
+    @Test
+    public void testCalcMonthlyPaymentAllZero() {
+        System.out.println("calcMonthlyPayment - all inputs zero");
+        double loanAmount = 0.0;
+        double annualInterestRate = 0.0;
+        int years = 0;
+        double expResult = -1;  // Expected -1 due to input validation failure
+        double result = Helper.calcMonthlyPayment(loanAmount, annualInterestRate, years);
+        assertEquals(expResult, result, 0.1);
+    }
+    
+    @Test
+    public void testCalcMonthlyPaymentNegativeValues() {
+        System.out.println("calcMonthlyPayment - negative values");
+        double loanAmount = -5000.0;
+        double annualInterestRate = -2.5;
+        int years = -10;
+        double expResult = -1;  // Expected -1 due to input validation failure
+        double result = Helper.calcMonthlyPayment(loanAmount, annualInterestRate, years);
+        assertEquals(expResult, result, 0.1);
+    }
+    
+    @Test
+    public void testCalcMonthlyPaymentValid() {
+        System.out.println("calcMonthlyPayment - valid inputs");
+        double loanAmount = 10000.0;
+        double annualInterestRate = 5.0;
+        int years = 2;
+        double expResult = 438.71;
+        double result = Helper.calcMonthlyPayment(loanAmount, annualInterestRate, years);
+        assertEquals(expResult, result, 0.1);
+    }
     
 }
