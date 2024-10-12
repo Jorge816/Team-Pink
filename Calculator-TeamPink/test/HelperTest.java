@@ -7,6 +7,8 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+import java.beans.Transient;
+
 /**
  *
  * @author 154jo
@@ -135,5 +137,4 @@ public class HelperTest {
         assertEquals(expResult, result, 0.1);
     }
 
-    
 }
