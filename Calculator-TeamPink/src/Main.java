@@ -835,7 +835,7 @@ String aboutMessage = "<html>"
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelCalculator.setBackground(new java.awt.Color(255, 249, 255));
+        panelCalculator.setBackground(new java.awt.Color(255, 215, 255));
 
         rentandbuy.setBackground(new java.awt.Color(255, 237, 255));
 
