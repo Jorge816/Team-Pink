@@ -7,6 +7,8 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+import java.beans.Transient;
+
 /**
  *
  * @author 154jo
@@ -131,6 +133,17 @@ public class HelperTest {
         double annualInterestRate = 5.0;
         int years = 2;
         double expResult = 438.71;
+        double result = Helper.calcMonthlyPayment(loanAmount, annualInterestRate, years);
+        assertEquals(expResult, result, 0.1);
+    }
+
+    @Test 
+    public void testCalcMonthlyPaymentvalid2(){
+        System.out.println("calcMonthlyPayment - valid inputs, loan amount in thousands");
+        double loanAmount = 1000000.0;
+        double annualInterestRate = 5.0;
+        int years = 2;
+        double expResult = 43871.39;
         double result = Helper.calcMonthlyPayment(loanAmount, annualInterestRate, years);
         assertEquals(expResult, result, 0.1);
     }
