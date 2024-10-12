@@ -3746,9 +3746,7 @@ String aboutMessage = "<html>"
     private void btnmathCalculatorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmathCalculatorActionPerformed
         // TODO add your handling code here:
         removeAllTabs();
-         restoreTab("Math Calculator");//needs to be change according to the name of the tab
-      
-      
+         restoreTab("Math Calculator");//needs to be change according to the name of the tab   
     }//GEN-LAST:event_btnmathCalculatorActionPerformed
 
     private void btnfitnessCalculatorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfitnessCalculatorActionPerformed
@@ -3756,30 +3754,20 @@ String aboutMessage = "<html>"
         removeAllTabs();
        
        restoreTab("Fitness & Health Calculator");
-
- 
     }//GEN-LAST:event_btnfitnessCalculatorActionPerformed
 
     private void btnOtherCalculatorsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOtherCalculatorsActionPerformed
         // TODO add your handling code here:
         removeAllTabs();
         restoreTab("Other Calculators");
-        
-        
-   
-        
-        
-      
-  
+
     }//GEN-LAST:event_btnOtherCalculatorsActionPerformed
 
     private void dashboardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardActionPerformed
         // TODO add your handling code here:
         removeAllTabs();
         restoreTab("+");
-       
-            
-        
+   
     }//GEN-LAST:event_dashboardActionPerformed
 
     private void btnfinancialCalculatorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfinancialCalculatorActionPerformed
