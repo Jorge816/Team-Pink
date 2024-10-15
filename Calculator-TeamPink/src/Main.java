@@ -515,13 +515,13 @@ String aboutMessage = "<html>"
         jLabel124 = new javax.swing.JLabel();
         jScrollPane7 = new javax.swing.JScrollPane();
         InstructionsMortgagePayoffCalculator = new javax.swing.JTextPane();
-        jPanel16 = new javax.swing.JPanel();
+        MathCalculator = new javax.swing.JPanel();
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
-        jPanel15 = new javax.swing.JPanel();
+        FitnessAndHealthCalculator = new javax.swing.JPanel();
         jLabel33 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
-        jPanel17 = new javax.swing.JPanel();
+        OtherCalculator = new javax.swing.JPanel();
         jLabel46 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
         Currency = new javax.swing.JPanel();
@@ -601,13 +601,13 @@ String aboutMessage = "<html>"
         jPanel32 = new javax.swing.JPanel();
         jPanel33 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
+        InterestRateLoanAmount = new javax.swing.JTextField();
         jLabel32 = new javax.swing.JLabel();
-        jTextField14 = new javax.swing.JTextField();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
+        InterestRateLoanTermYears = new javax.swing.JTextField();
+        InterestRateCalculatorCalculateBTN = new javax.swing.JButton();
+        InterestRateCalculatorClearBTN = new javax.swing.JButton();
+        InterestRateLoanTermMonths = new javax.swing.JTextField();
+        InterestRateMonthlyPayment = new javax.swing.JTextField();
         jLabel35 = new javax.swing.JLabel();
         jPanel34 = new javax.swing.JPanel();
         jLabel34 = new javax.swing.JLabel();
@@ -762,7 +762,7 @@ String aboutMessage = "<html>"
                         .addGroup(FCcontrolBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(InvestmentCalculatorBTN3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(RetirementCalculatorBTN2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(MortgageandRealEstateBTN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
+                            .addComponent(MortgageandRealEstateBTN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(OtherCalculatorsBTN1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addComponent(autoCalculatorBTN4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
@@ -2858,95 +2858,95 @@ String aboutMessage = "<html>"
 
         panelCalculator.addTab("Mortgage Payoff Calculator", MortgagePayoffCalculator);
 
-        jPanel16.setBackground(new java.awt.Color(255, 237, 255));
+        MathCalculator.setBackground(new java.awt.Color(255, 237, 255));
 
         jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/pinkPanterUnderConstruction.gif"))); // NOI18N
 
         jLabel39.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel39.setText("Under Construction");
 
-        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
-        jPanel16.setLayout(jPanel16Layout);
-        jPanel16Layout.setHorizontalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel16Layout.createSequentialGroup()
+        javax.swing.GroupLayout MathCalculatorLayout = new javax.swing.GroupLayout(MathCalculator);
+        MathCalculator.setLayout(MathCalculatorLayout);
+        MathCalculatorLayout.setHorizontalGroup(
+            MathCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MathCalculatorLayout.createSequentialGroup()
                 .addContainerGap(388, Short.MAX_VALUE)
                 .addComponent(jLabel39)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(292, Short.MAX_VALUE))
         );
-        jPanel16Layout.setVerticalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel16Layout.createSequentialGroup()
+        MathCalculatorLayout.setVerticalGroup(
+            MathCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MathCalculatorLayout.createSequentialGroup()
                 .addContainerGap(158, Short.MAX_VALUE)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(MathCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel38))
                 .addContainerGap(119, Short.MAX_VALUE))
         );
 
-        panelCalculator.addTab("Math Calculator", jPanel16);
+        panelCalculator.addTab("Math Calculator", MathCalculator);
 
-        jPanel15.setBackground(new java.awt.Color(255, 237, 255));
+        FitnessAndHealthCalculator.setBackground(new java.awt.Color(255, 237, 255));
 
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/pinkPanterUnderConstruction.gif"))); // NOI18N
 
         jLabel37.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel37.setText("Under Construction");
 
-        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
-        jPanel15.setLayout(jPanel15Layout);
-        jPanel15Layout.setHorizontalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
+        javax.swing.GroupLayout FitnessAndHealthCalculatorLayout = new javax.swing.GroupLayout(FitnessAndHealthCalculator);
+        FitnessAndHealthCalculator.setLayout(FitnessAndHealthCalculatorLayout);
+        FitnessAndHealthCalculatorLayout.setHorizontalGroup(
+            FitnessAndHealthCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FitnessAndHealthCalculatorLayout.createSequentialGroup()
                 .addContainerGap(379, Short.MAX_VALUE)
                 .addComponent(jLabel37)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(289, Short.MAX_VALUE))
         );
-        jPanel15Layout.setVerticalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel15Layout.createSequentialGroup()
+        FitnessAndHealthCalculatorLayout.setVerticalGroup(
+            FitnessAndHealthCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FitnessAndHealthCalculatorLayout.createSequentialGroup()
                 .addContainerGap(133, Short.MAX_VALUE)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(FitnessAndHealthCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel33))
                 .addContainerGap(144, Short.MAX_VALUE))
         );
 
-        panelCalculator.addTab("Fitness & Health Calculator", jPanel15);
+        panelCalculator.addTab("Fitness & Health Calculator", FitnessAndHealthCalculator);
 
-        jPanel17.setBackground(new java.awt.Color(255, 237, 255));
+        OtherCalculator.setBackground(new java.awt.Color(255, 237, 255));
 
         jLabel46.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel46.setText("Under Construction");
 
         jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/pinkPanterUnderConstruction.gif"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
-        jPanel17.setLayout(jPanel17Layout);
-        jPanel17Layout.setHorizontalGroup(
-            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel17Layout.createSequentialGroup()
+        javax.swing.GroupLayout OtherCalculatorLayout = new javax.swing.GroupLayout(OtherCalculator);
+        OtherCalculator.setLayout(OtherCalculatorLayout);
+        OtherCalculatorLayout.setHorizontalGroup(
+            OtherCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OtherCalculatorLayout.createSequentialGroup()
                 .addContainerGap(355, Short.MAX_VALUE)
                 .addComponent(jLabel46)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(325, Short.MAX_VALUE))
         );
-        jPanel17Layout.setVerticalGroup(
-            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel17Layout.createSequentialGroup()
+        OtherCalculatorLayout.setVerticalGroup(
+            OtherCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OtherCalculatorLayout.createSequentialGroup()
                 .addContainerGap(135, Short.MAX_VALUE)
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(OtherCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel47)
                     .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(142, Short.MAX_VALUE))
         );
 
-        panelCalculator.addTab("Other Calculators", jPanel17);
+        panelCalculator.addTab("Other Calculators", OtherCalculator);
 
         Currency.setBackground(new java.awt.Color(255, 237, 255));
 
@@ -3435,27 +3435,27 @@ String aboutMessage = "<html>"
         jLabel31.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel31.setText("Loan Amount");
 
-        jTextField13.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jTextField13.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        InterestRateLoanAmount.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        InterestRateLoanAmount.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         jLabel32.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel32.setText("Loan Term");
 
-        jTextField14.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jTextField14.addActionListener(new java.awt.event.ActionListener() {
+        InterestRateLoanTermYears.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        InterestRateLoanTermYears.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField14ActionPerformed(evt);
+                InterestRateLoanTermYearsActionPerformed(evt);
             }
         });
 
-        jButton7.setText("Calculate ");
+        InterestRateCalculatorCalculateBTN.setText("Calculate ");
 
-        jButton8.setText("Clear");
+        InterestRateCalculatorClearBTN.setText("Clear");
 
-        jTextField15.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        InterestRateLoanTermMonths.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
-        jTextField16.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jTextField16.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        InterestRateMonthlyPayment.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        InterestRateMonthlyPayment.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         jLabel35.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel35.setText("Monthly Payment");
@@ -3468,18 +3468,18 @@ String aboutMessage = "<html>"
                 .addContainerGap()
                 .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField13)
+                    .addComponent(InterestRateLoanAmount)
                     .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel33Layout.createSequentialGroup()
-                        .addComponent(jTextField14)
+                        .addComponent(InterestRateLoanTermYears)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField15))
-                    .addComponent(jTextField16)
+                        .addComponent(InterestRateLoanTermMonths))
+                    .addComponent(InterestRateMonthlyPayment)
                     .addComponent(jLabel35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel33Layout.createSequentialGroup()
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(InterestRateCalculatorCalculateBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE)))
+                        .addComponent(InterestRateCalculatorClearBTN, javax.swing.GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel33Layout.setVerticalGroup(
@@ -3488,21 +3488,21 @@ String aboutMessage = "<html>"
                 .addGap(20, 20, 20)
                 .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(InterestRateLoanAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField14)
-                    .addComponent(jTextField15))
+                    .addComponent(InterestRateLoanTermYears)
+                    .addComponent(InterestRateLoanTermMonths))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel35, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField16, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                .addComponent(InterestRateMonthlyPayment, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton7)
-                    .addComponent(jButton8))
+                    .addComponent(InterestRateCalculatorCalculateBTN)
+                    .addComponent(InterestRateCalculatorClearBTN))
                 .addGap(22, 22, 22))
         );
 
@@ -3796,9 +3796,9 @@ String aboutMessage = "<html>"
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField10ActionPerformed
 
-    private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
+    private void InterestRateLoanTermYearsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InterestRateLoanTermYearsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField14ActionPerformed
+    }//GEN-LAST:event_InterestRateLoanTermYearsActionPerformed
 
     private void MortgageandRealEstateBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MortgageandRealEstateBTNActionPerformed
         // TODO add your handling code here:
@@ -4299,6 +4299,7 @@ String aboutMessage = "<html>"
     private javax.swing.JPanel AutoLoan;
     private javax.swing.JPanel Currency;
     private javax.swing.JPanel FCcontrolBtn;
+    private javax.swing.JPanel FitnessAndHealthCalculator;
     private javax.swing.JPanel HouseAffordabilityCalculator;
     private javax.swing.JTextPane InstructionsAutoLoan2Calculator;
     private javax.swing.JTextPane InstructionsAutoLoanCalculator;
@@ -4313,10 +4314,18 @@ String aboutMessage = "<html>"
     private javax.swing.JTextPane InstructionsRetirementCalculator;
     private javax.swing.JTextPane InstructionsRothIRACalculator;
     private javax.swing.JPanel InterestRate;
+    private javax.swing.JButton InterestRateCalculatorCalculateBTN;
+    private javax.swing.JButton InterestRateCalculatorClearBTN;
+    private javax.swing.JTextField InterestRateLoanAmount;
+    private javax.swing.JTextField InterestRateLoanTermMonths;
+    private javax.swing.JTextField InterestRateLoanTermYears;
+    private javax.swing.JTextField InterestRateMonthlyPayment;
     private javax.swing.JButton InvestmentCalculatorBTN3;
+    private javax.swing.JPanel MathCalculator;
     private javax.swing.JPanel MortgageCalculator2;
     private javax.swing.JPanel MortgagePayoffCalculator;
     private javax.swing.JButton MortgageandRealEstateBTN;
+    private javax.swing.JPanel OtherCalculator;
     private javax.swing.JButton OtherCalculatorsBTN1;
     private javax.swing.JPanel RefinanceCalculator;
     private javax.swing.JPanel RentCalculator;
@@ -4354,8 +4363,6 @@ String aboutMessage = "<html>"
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;
@@ -4534,9 +4541,6 @@ String aboutMessage = "<html>"
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel24;
@@ -4618,10 +4622,6 @@ String aboutMessage = "<html>"
     private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField120;
     private javax.swing.JTextField jTextField121;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
     private javax.swing.JTextField jTextField17;
     private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField19;
