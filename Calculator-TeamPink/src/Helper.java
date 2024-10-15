@@ -27,8 +27,30 @@ public class Helper {
     public static boolean inRange(double num, double max){
         return num <= max; // Returns true if the number is within the specified range.
     }
-    
-    public static double calcMonthlyPayment(double loanAmount, double annualInterestRate, int years) {
+
+    public static boolean isEmptyInput(String input){
+        return input == null || input.trim().isEmpty();
+    }
+
+    public static double calcMonthlyPayment(String loanAmountStr, String annualInterestRateStr, String yearsStr) {
+        if(isEmptyInput(loanAmountStr) || isEmptyInput(annualInterestRateStr) || isEmptyInput(yearsStr)){
+            System.out.println("Input cannot be empty.");
+            return -1;
+        }
+        
+        double loanAmount;
+        double annualInterestRate;
+        int years;
+        
+        try{
+            loanAmount = Double.parseDouble(loanAmountStr);
+            annualInterestRate = Double.parseDouble(annualInterestRateStr);
+            years = Integer.parseInt(yearsStr);
+        }catch (NumberFormatException e){
+            System.out.println("Invalid input format.");
+            return -1;
+        }
+        
         String msg = ""; // Message to accumulate any input validation errors.
         
         if (years <= 0) {
@@ -52,6 +74,10 @@ public class Helper {
         // Validate input: Ensure the interest rate does not exceed the maximum allowable value.
         if(!inRange(annualInterestRate, maxValue)){
             msg += "Input too large: Interest rate exceeds limit.";
+        }
+        
+        if(!inRange(years, maxValue)){
+            msg += "Input too large: Years exceeds limit.";
         }
         
         // If there are any validation errors, print the message and return -1 to indicate failure.
