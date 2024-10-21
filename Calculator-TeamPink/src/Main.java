@@ -601,16 +601,26 @@ String aboutMessage = "<html>"
         jPanel32 = new javax.swing.JPanel();
         jPanel33 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
-        InterestRateLoanAmount = new javax.swing.JTextField();
+        InterestRateInitialInvestment = new javax.swing.JTextField();
         jLabel32 = new javax.swing.JLabel();
-        InterestRateLoanTermYears = new javax.swing.JTextField();
         InterestRateCalculatorCalculateBTN = new javax.swing.JButton();
         InterestRateCalculatorClearBTN = new javax.swing.JButton();
-        InterestRateLoanTermMonths = new javax.swing.JTextField();
-        InterestRateMonthlyPayment = new javax.swing.JTextField();
+        InterestRateAnnualContribution = new javax.swing.JTextField();
+        jLabel116 = new javax.swing.JLabel();
+        InterestRateMonthlyContribution = new javax.swing.JTextField();
+        InterestRateBeggnning = new javax.swing.JRadioButton();
+        InterestRateEnd = new javax.swing.JRadioButton();
         jLabel35 = new javax.swing.JLabel();
+        InterestRateInvestmentLengthMonths = new javax.swing.JTextField();
+        jLabel50 = new javax.swing.JLabel();
+        InterestRateCompoundPeriods = new javax.swing.JComboBox<>();
+        jLabel117 = new javax.swing.JLabel();
+        InterestRateInterest = new javax.swing.JTextField();
+        InterestRateInvestmentLengthYears = new javax.swing.JTextField();
+        jLabel119 = new javax.swing.JLabel();
+        jLabel122 = new javax.swing.JLabel();
         jPanel34 = new javax.swing.JPanel();
-        jLabel34 = new javax.swing.JLabel();
+        InterestRateOutput = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
         InstructionsRateCalculator = new javax.swing.JTextPane();
         jPanel19 = new javax.swing.JPanel();
@@ -762,7 +772,7 @@ String aboutMessage = "<html>"
                         .addGroup(FCcontrolBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(InvestmentCalculatorBTN3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(RetirementCalculatorBTN2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(MortgageandRealEstateBTN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(MortgageandRealEstateBTN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
                             .addComponent(OtherCalculatorsBTN1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addComponent(autoCalculatorBTN4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
@@ -1812,7 +1822,7 @@ String aboutMessage = "<html>"
                                             .addGroup(jPanel51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                 .addComponent(jLabel113, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                 .addComponent(jLabel114, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(jLabel115, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(jLabel115, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
                                                 .addGroup(jPanel51Layout.createSequentialGroup()
                                                     .addGroup(jPanel51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                         .addComponent(jComboBox15, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2870,11 +2880,11 @@ String aboutMessage = "<html>"
         MathCalculatorLayout.setHorizontalGroup(
             MathCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MathCalculatorLayout.createSequentialGroup()
-                .addContainerGap(388, Short.MAX_VALUE)
+                .addContainerGap(389, Short.MAX_VALUE)
                 .addComponent(jLabel39)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(292, Short.MAX_VALUE))
+                .addContainerGap(294, Short.MAX_VALUE))
         );
         MathCalculatorLayout.setVerticalGroup(
             MathCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2900,11 +2910,11 @@ String aboutMessage = "<html>"
         FitnessAndHealthCalculatorLayout.setHorizontalGroup(
             FitnessAndHealthCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FitnessAndHealthCalculatorLayout.createSequentialGroup()
-                .addContainerGap(379, Short.MAX_VALUE)
+                .addContainerGap(380, Short.MAX_VALUE)
                 .addComponent(jLabel37)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(289, Short.MAX_VALUE))
+                .addContainerGap(291, Short.MAX_VALUE))
         );
         FitnessAndHealthCalculatorLayout.setVerticalGroup(
             FitnessAndHealthCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2930,11 +2940,11 @@ String aboutMessage = "<html>"
         OtherCalculatorLayout.setHorizontalGroup(
             OtherCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(OtherCalculatorLayout.createSequentialGroup()
-                .addContainerGap(355, Short.MAX_VALUE)
+                .addContainerGap(356, Short.MAX_VALUE)
                 .addComponent(jLabel46)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(325, Short.MAX_VALUE))
+                .addContainerGap(327, Short.MAX_VALUE))
         );
         OtherCalculatorLayout.setVerticalGroup(
             OtherCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3433,32 +3443,106 @@ String aboutMessage = "<html>"
         jPanel33.setBackground(new java.awt.Color(204, 255, 204));
 
         jLabel31.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel31.setText("Loan Amount");
+        jLabel31.setText("Initial Investment         $");
 
-        InterestRateLoanAmount.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        InterestRateLoanAmount.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-
-        jLabel32.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel32.setText("Loan Term");
-
-        InterestRateLoanTermYears.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        InterestRateLoanTermYears.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                InterestRateLoanTermYearsActionPerformed(evt);
+        InterestRateInitialInvestment.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        InterestRateInitialInvestment.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        InterestRateInitialInvestment.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                InterestRateInitialInvestmentKeyReleased(evt);
             }
         });
 
+        jLabel32.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel32.setText("Annual Contribution    $");
+
         InterestRateCalculatorCalculateBTN.setText("Calculate ");
+        InterestRateCalculatorCalculateBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                InterestRateCalculatorCalculateBTNActionPerformed(evt);
+            }
+        });
 
         InterestRateCalculatorClearBTN.setText("Clear");
+        InterestRateCalculatorClearBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                InterestRateCalculatorClearBTNActionPerformed(evt);
+            }
+        });
 
-        InterestRateLoanTermMonths.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        InterestRateAnnualContribution.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        InterestRateAnnualContribution.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        InterestRateAnnualContribution.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                InterestRateAnnualContributionKeyReleased(evt);
+            }
+        });
 
-        InterestRateMonthlyPayment.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        InterestRateMonthlyPayment.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        jLabel116.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel116.setText("Monthly Contribution  $");
+
+        InterestRateMonthlyContribution.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        InterestRateMonthlyContribution.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        InterestRateMonthlyContribution.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                InterestRateMonthlyContributionKeyReleased(evt);
+            }
+        });
+
+        InterestRateBeggnning.setText("Contribute at the beggining of each compound period");
+        InterestRateBeggnning.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                InterestRateBeggnningActionPerformed(evt);
+            }
+        });
+
+        InterestRateEnd.setText("Contribute at the end of each compound period");
+        InterestRateEnd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                InterestRateEndActionPerformed(evt);
+            }
+        });
 
         jLabel35.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel35.setText("Monthly Payment");
+        jLabel35.setText("Interest Rate                  %");
+
+        InterestRateInvestmentLengthMonths.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        InterestRateInvestmentLengthMonths.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        InterestRateInvestmentLengthMonths.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                InterestRateInvestmentLengthMonthsKeyReleased(evt);
+            }
+        });
+
+        jLabel50.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel50.setText("Compound");
+
+        InterestRateCompoundPeriods.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Annually", "Semiannually", "Quarterly", "Monthly", "Semimonthly", "Biweekly", "Weekly", "Daily", "Continuously" }));
+
+        jLabel117.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel117.setText("Investment Length");
+
+        InterestRateInterest.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        InterestRateInterest.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        InterestRateInterest.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                InterestRateInterestKeyReleased(evt);
+            }
+        });
+
+        InterestRateInvestmentLengthYears.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        InterestRateInvestmentLengthYears.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        InterestRateInvestmentLengthYears.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                InterestRateInvestmentLengthYearsKeyReleased(evt);
+            }
+        });
+
+        jLabel119.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel119.setText("Years");
+
+        jLabel122.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel122.setText("Months");
 
         javax.swing.GroupLayout jPanel33Layout = new javax.swing.GroupLayout(jPanel33);
         jPanel33.setLayout(jPanel33Layout);
@@ -3467,64 +3551,112 @@ String aboutMessage = "<html>"
             .addGroup(jPanel33Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(InterestRateLoanAmount)
-                    .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel33Layout.createSequentialGroup()
-                        .addComponent(InterestRateLoanTermYears)
+                        .addComponent(InterestRateCalculatorCalculateBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(InterestRateLoanTermMonths))
-                    .addComponent(InterestRateMonthlyPayment)
-                    .addComponent(jLabel35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel33Layout.createSequentialGroup()
-                        .addComponent(InterestRateCalculatorCalculateBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(InterestRateCalculatorClearBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel33Layout.createSequentialGroup()
+                        .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(InterestRateEnd, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel33Layout.createSequentialGroup()
+                                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jLabel116, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 156, Short.MAX_VALUE)
+                                    .addComponent(jLabel31, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel32, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(InterestRateAnnualContribution)
+                                    .addComponent(InterestRateInitialInvestment)
+                                    .addComponent(InterestRateMonthlyContribution, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)))
+                            .addComponent(InterestRateBeggnning, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel33Layout.createSequentialGroup()
+                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel33Layout.createSequentialGroup()
+                        .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(InterestRateCalculatorClearBTN, javax.swing.GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addComponent(InterestRateCompoundPeriods, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel33Layout.createSequentialGroup()
+                        .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(InterestRateInterest))
+                    .addGroup(jPanel33Layout.createSequentialGroup()
+                        .addComponent(jLabel117, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel33Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                                .addComponent(jLabel119, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(86, 86, 86))
+                            .addGroup(jPanel33Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(InterestRateInvestmentLengthYears)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                        .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel122, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(InterestRateInvestmentLengthMonths, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(17, 17, 17))
         );
         jPanel33Layout.setVerticalGroup(
             jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel33Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
+                .addContainerGap()
+                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(InterestRateInitialInvestment, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(InterestRateLoanAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
+                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(InterestRateAnnualContribution, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(InterestRateLoanTermYears)
-                    .addComponent(InterestRateLoanTermMonths))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel35, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+                    .addComponent(jLabel116, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(InterestRateMonthlyContribution, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(InterestRateMonthlyPayment, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
+                .addComponent(InterestRateBeggnning)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(InterestRateEnd)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(InterestRateInterest, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(InterestRateCompoundPeriods, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel117, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(InterestRateInvestmentLengthMonths, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(InterestRateInvestmentLengthYears, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel119, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel122, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(InterestRateCalculatorCalculateBTN)
                     .addComponent(InterestRateCalculatorClearBTN))
-                .addGap(22, 22, 22))
+                .addContainerGap())
         );
 
         jPanel34.setBackground(new java.awt.Color(204, 255, 204));
 
-        jLabel34.setText("Display output here");
+        InterestRateOutput.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
 
         javax.swing.GroupLayout jPanel34Layout = new javax.swing.GroupLayout(jPanel34);
         jPanel34.setLayout(jPanel34Layout);
         jPanel34Layout.setHorizontalGroup(
             jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel34Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(71, Short.MAX_VALUE))
+                .addComponent(InterestRateOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel34Layout.setVerticalGroup(
             jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel34Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(9, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel34Layout.createSequentialGroup()
+                .addContainerGap(9, Short.MAX_VALUE)
+                .addComponent(InterestRateOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         InstructionsRateCalculator.setBackground(new java.awt.Color(255, 215, 255));
@@ -3535,14 +3667,11 @@ String aboutMessage = "<html>"
         jPanel32Layout.setHorizontalGroup(
             jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel32Layout.createSequentialGroup()
-                .addContainerGap(22, Short.MAX_VALUE)
-                .addGroup(jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel32Layout.createSequentialGroup()
-                        .addComponent(jPanel34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel32Layout.createSequentialGroup()
-                        .addComponent(jPanel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(270, 270, 270)))
+                .addContainerGap(23, Short.MAX_VALUE)
+                .addGroup(jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(23, 23, 23)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(92, Short.MAX_VALUE))
         );
@@ -3554,7 +3683,9 @@ String aboutMessage = "<html>"
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(15, 15, 15))
-            .addComponent(jScrollPane4)
+            .addGroup(jPanel32Layout.createSequentialGroup()
+                .addComponent(jScrollPane4)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout InterestRateLayout = new javax.swing.GroupLayout(InterestRate);
@@ -3562,16 +3693,16 @@ String aboutMessage = "<html>"
         InterestRateLayout.setHorizontalGroup(
             InterestRateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(InterestRateLayout.createSequentialGroup()
-                .addContainerGap(66, Short.MAX_VALUE)
+                .addContainerGap(67, Short.MAX_VALUE)
                 .addComponent(jPanel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap(52, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
         InterestRateLayout.setVerticalGroup(
             InterestRateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, InterestRateLayout.createSequentialGroup()
-                .addContainerGap(40, Short.MAX_VALUE)
+                .addContainerGap(41, Short.MAX_VALUE)
                 .addComponent(jPanel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(106, Short.MAX_VALUE))
+                .addContainerGap(104, Short.MAX_VALUE))
         );
 
         panelCalculator.addTab("Interest Rate Calculator", InterestRate);
@@ -3796,10 +3927,6 @@ String aboutMessage = "<html>"
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField10ActionPerformed
 
-    private void InterestRateLoanTermYearsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InterestRateLoanTermYearsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_InterestRateLoanTermYearsActionPerformed
-
     private void MortgageandRealEstateBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MortgageandRealEstateBTNActionPerformed
         // TODO add your handling code here:
         removeAllTabs();
@@ -3852,7 +3979,132 @@ String aboutMessage = "<html>"
         // TODO add your handling code here:
         showAboutPopup();
     }//GEN-LAST:event_jMenu2MouseClicked
-     
+
+    private void InterestRateCalculatorClearBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InterestRateCalculatorClearBTNActionPerformed
+        // TODO add your handling code here:
+        InterestRateInitialInvestment.setText("");
+        InterestRateAnnualContribution.setText("");
+        InterestRateMonthlyContribution.setText("");
+        InterestRateBeggnning.setSelected(false);
+        InterestRateEnd.setSelected(false);
+        InterestRateInterest.setText("");
+        InterestRateInvestmentLengthYears.setText("");
+        InterestRateInvestmentLengthMonths.setText("");
+        
+    }//GEN-LAST:event_InterestRateCalculatorClearBTNActionPerformed
+
+    private void InterestRateBeggnningActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InterestRateBeggnningActionPerformed
+        // TODO add your handling code here:
+       if (InterestRateBeggnning.isSelected()) {
+        // If selected, uncheck InterestRateEnd
+        InterestRateEnd.setSelected(false);
+    }
+    }//GEN-LAST:event_InterestRateBeggnningActionPerformed
+
+    private void InterestRateEndActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InterestRateEndActionPerformed
+        // TODO add your handling code here:
+        if (InterestRateEnd.isSelected()) {
+        // If selected, uncheck InterestRateEnd
+        InterestRateBeggnning.setSelected(false);}
+        
+    }//GEN-LAST:event_InterestRateEndActionPerformed
+
+    private void InterestRateInitialInvestmentKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_InterestRateInitialInvestmentKeyReleased
+        // TODO add your handling code here:
+         // Get the input from the text field
+      String input = InterestRateInitialInvestment.getText();
+      // Strip all spaces from the input as the user types
+      String strippedInput = input.replaceAll("\\s", "");
+      // Set the text field with the stripped input (without spaces)
+      InterestRateInitialInvestment.setText(strippedInput);
+      Helper.InterestRateCalculatorInputValidation(strippedInput);
+    }//GEN-LAST:event_InterestRateInitialInvestmentKeyReleased
+
+    private void InterestRateAnnualContributionKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_InterestRateAnnualContributionKeyReleased
+        // TODO add your handling code here:
+                 // Get the input from the text field
+      String input = InterestRateAnnualContribution.getText();
+      // Strip all spaces from the input as the user types
+      String strippedInput = input.replaceAll("\\s", "");
+      // Set the text field with the stripped input (without spaces)
+      InterestRateAnnualContribution.setText(strippedInput);
+      Helper.InterestRateCalculatorInputValidation(strippedInput);
+    }//GEN-LAST:event_InterestRateAnnualContributionKeyReleased
+
+    private void InterestRateMonthlyContributionKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_InterestRateMonthlyContributionKeyReleased
+      // Get the input from the text field
+      String input = InterestRateMonthlyContribution.getText();
+      // Strip all spaces from the input as the user types
+      String strippedInput = input.replaceAll("\\s", "");
+      // Set the text field with the stripped input (without spaces)
+      InterestRateMonthlyContribution.setText(strippedInput);
+      Helper.InterestRateCalculatorInputValidation(strippedInput);
+    }//GEN-LAST:event_InterestRateMonthlyContributionKeyReleased
+
+    private void InterestRateInterestKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_InterestRateInterestKeyReleased
+          // Get the input from the text field
+      String input = InterestRateInterest.getText();
+      // Strip all spaces from the input as the user types
+      String strippedInput = input.replaceAll("\\s", "");
+      // Set the text field with the stripped input (without spaces)
+      InterestRateInterest.setText(strippedInput);
+      Helper.InterestRateCalculatorInputValidation(strippedInput);
+    }//GEN-LAST:event_InterestRateInterestKeyReleased
+
+    private void InterestRateInvestmentLengthYearsKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_InterestRateInvestmentLengthYearsKeyReleased
+        // TODO add your handling code here:
+        if (!Helper.isWholeNumber(InterestRateInvestmentLengthYears.getText().replaceAll("\\s", ""))){
+            
+            Helper.InterestRateCalculatorInputValidation(InterestRateInvestmentLengthYears.getText().replaceAll("\\s", ""));
+        }
+    }//GEN-LAST:event_InterestRateInvestmentLengthYearsKeyReleased
+
+    private void InterestRateInvestmentLengthMonthsKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_InterestRateInvestmentLengthMonthsKeyReleased
+       if (!Helper.isWholeNumber(InterestRateInvestmentLengthMonths.getText().replaceAll("\\s", ""))){
+            Helper.InterestRateCalculatorInputValidation(InterestRateInvestmentLengthMonths.getText().replaceAll("\\s", ""));
+        }
+    }//GEN-LAST:event_InterestRateInvestmentLengthMonthsKeyReleased
+
+    private void InterestRateCalculatorCalculateBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InterestRateCalculatorCalculateBTNActionPerformed
+      // Retrieve the selected item from the InterestRateCompoundPeriods combo box
+        String selectedOption = (String) InterestRateCompoundPeriods.getSelectedItem();
+        
+        Helper.InterestRateCalculatorInputValidation(InterestRateInitialInvestment.getText());
+        Helper.InterestRateCalculatorInputValidation(InterestRateAnnualContribution.getText());
+        Helper.InterestRateCalculatorInputValidation(InterestRateMonthlyContribution.getText());
+        Helper.InterestRateCalculatorInputValidation(InterestRateInterest.getText());
+        Helper.InterestRateCalculatorInputValidation(InterestRateInterest.getText());
+        Helper.InterestRateCalculatorInputValidation(InterestRateInvestmentLengthYears.getText());
+        
+
+        double PI = Double.parseDouble(InterestRateInitialInvestment.getText());
+        double Ca = Double.parseDouble(InterestRateAnnualContribution.getText());
+        double Cm = Double.parseDouble(InterestRateMonthlyContribution.getText());
+        double r = Double.parseDouble(InterestRateInterest.getText())/100;
+        int a = 1;   
+        int n = Helper.selectionPeriod(selectedOption);
+        double t = Double.parseDouble(InterestRateInvestmentLengthYears.getText());
+        
+        double FV_year = 0;
+
+
+        
+        if (InterestRateBeggnning.isSelected()) {
+            FV_year += Helper.interestRateBegining(PI, Ca, Cm, r, a, n, t);
+        }
+
+        // Check if InterestRateEnd is selected
+        if (InterestRateEnd.isSelected()) {
+             // Calculate future value using nominal interest rate and contributions
+          FV_year += Helper.interestrateEND(PI, Ca, Cm, r, a, n, t);
+        }
+        
+        InterestRateOutput.setText("Ending Balance " + String.format("%.2f", FV_year));
+
+   
+    }//GEN-LAST:event_InterestRateCalculatorCalculateBTNActionPerformed
+    
+    
     
     //Text field 
      // Method to display the first message in jTextPane1
@@ -3942,22 +4194,32 @@ String aboutMessage = "<html>"
         InstructionsAutoLoan2Calculator.setText(autoLoanInstructions2);
      }
      
-    private void setMessage4(){
-        String rateCalculatorInstructions = "<html>"
-            + "<b>Loan Amount:</b><br>"
-            + "Enter the total amount of the loan you wish to calculate the rate for.<br><br>"
-            + "<b>Loan Term:</b><br>"
-            + "Enter the length of time (in months) over which you will repay the loan.<br><br>"
-            + "<b>Monthly Payment:</b><br>"
-            + "Enter the estimated or calculated monthly payment amount for the loan.<br><br>"
-            + "<b>Calculate Button:</b><br>"
-            + "Once you’ve entered all the information, click the 'Calculate' button to compute the loan rate based on your inputs.<br><br>"
-            + "<b>Clear Button:</b><br>"
-            + "Click 'Clear' to reset the fields and start a new calculation."
-            + "</html>";
-        InstructionsRateCalculator.setContentType("text/html");
-        InstructionsRateCalculator.setText(rateCalculatorInstructions);
-      }
+private void setMessage4() {
+    String rateCalculatorInstructions = "<html>"
+        + "<b>Initial Investment:</b><br>"
+        + "Enter the amount of the initial investment you plan to contribute.<br><br>"
+        + "<b>Annual Contribution:</b><br>"
+        + "Enter the total amount you plan to contribute each year.<br><br>"
+        + "<b>Monthly Contribution:</b><br>"
+        + "Enter the total amount you plan to contribute each month.<br><br>"
+        + "<b>Contribute at the beginning/end of each period:</b><br>"
+        + "Select whether you will contribute at the beginning or end of each compound period.<br><br>"
+        + "<b>Interest Rate:</b><br>"
+        + "Enter the annual interest rate (in percentage) for your investment.<br><br>"
+        + "<b>Compound:</b><br>"
+        + "Select how frequently the interest is compounded (e.g., Annually, Monthly, etc.).<br><br>"
+        + "<b>Investment Length:</b><br>"
+        + "Enter the length of the investment in years and months.<br><br>"
+        + "<b>Calculate Button:</b><br>"
+        + "Once you’ve entered all the information, click the 'Calculate' button to compute the future value of your investment.<br><br>"
+        + "<b>Clear Button:</b><br>"
+        + "Click 'Clear' to reset all the fields and start a new calculation."
+        + "</html>";
+
+    InstructionsRateCalculator.setContentType("text/html");
+    InstructionsRateCalculator.setText(rateCalculatorInstructions);
+}
+
       
     private void setMessage5(){
       String retirementCalculatorInstructions = "<html>"
@@ -4314,12 +4576,18 @@ String aboutMessage = "<html>"
     private javax.swing.JTextPane InstructionsRetirementCalculator;
     private javax.swing.JTextPane InstructionsRothIRACalculator;
     private javax.swing.JPanel InterestRate;
+    private javax.swing.JTextField InterestRateAnnualContribution;
+    private javax.swing.JRadioButton InterestRateBeggnning;
     private javax.swing.JButton InterestRateCalculatorCalculateBTN;
     private javax.swing.JButton InterestRateCalculatorClearBTN;
-    private javax.swing.JTextField InterestRateLoanAmount;
-    private javax.swing.JTextField InterestRateLoanTermMonths;
-    private javax.swing.JTextField InterestRateLoanTermYears;
-    private javax.swing.JTextField InterestRateMonthlyPayment;
+    private javax.swing.JComboBox<String> InterestRateCompoundPeriods;
+    private javax.swing.JRadioButton InterestRateEnd;
+    private javax.swing.JTextField InterestRateInitialInvestment;
+    private javax.swing.JTextField InterestRateInterest;
+    private javax.swing.JTextField InterestRateInvestmentLengthMonths;
+    private javax.swing.JTextField InterestRateInvestmentLengthYears;
+    private javax.swing.JTextField InterestRateMonthlyContribution;
+    private javax.swing.JLabel InterestRateOutput;
     private javax.swing.JButton InvestmentCalculatorBTN3;
     private javax.swing.JPanel MathCalculator;
     private javax.swing.JPanel MortgageCalculator2;
@@ -4409,10 +4677,14 @@ String aboutMessage = "<html>"
     private javax.swing.JLabel jLabel113;
     private javax.swing.JLabel jLabel114;
     private javax.swing.JLabel jLabel115;
+    private javax.swing.JLabel jLabel116;
+    private javax.swing.JLabel jLabel117;
     private javax.swing.JLabel jLabel118;
+    private javax.swing.JLabel jLabel119;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel120;
     private javax.swing.JLabel jLabel121;
+    private javax.swing.JLabel jLabel122;
     private javax.swing.JLabel jLabel124;
     private javax.swing.JLabel jLabel125;
     private javax.swing.JLabel jLabel126;
@@ -4467,7 +4739,6 @@ String aboutMessage = "<html>"
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
@@ -4485,6 +4756,7 @@ String aboutMessage = "<html>"
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel53;
