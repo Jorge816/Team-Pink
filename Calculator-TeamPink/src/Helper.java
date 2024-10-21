@@ -13,8 +13,171 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import java.io.IOException;
+import javax.swing.JOptionPane;
 
 public class Helper {
+    //------------------------------------------------------------------------------------------------------InterestRateCalculator
+    //-----------// isWHoleNumber
+    public static boolean isWholeNumber(String input) {
+    // Check if the input is null or empty
+        if (input == null || input.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Enter a whole number.");
+            return false;
+            
+        }
+
+        // Check if the input contains only digits (for whole numbers) and an optional minus sign for negative numbers
+        if (input.matches("\\d+")) { // "-?" allows an optional negative sign, "\\d+" ensures only digits
+            return true;
+        }
+        
+        JOptionPane.showMessageDialog(null, "Enter a whole number.");
+        return false; // If input contains anything other than digits, return false
+    }
+    
+    //----------- // Validate the stripped input
+    public static boolean InterestRateCalculatorInputValidation(String input) {
+    
+        if (!input.isEmpty()) {
+            // Check if the input contains only digits (this allows decimals as well)
+            if (input.matches("[0-9.]+")) {
+                try {
+                    // Parse the input to a number and check if it's a positive number
+                    double value = Double.parseDouble(input);
+
+                    if (value < 0) {
+                        // If the number is negative, display an error message
+                        JOptionPane.showMessageDialog(null, "Negative numbers are not allowed.");
+                        return false;  // Return false to indicate invalid input
+                    }         
+                    // If all checks pass, return true
+                    return true;  // Return true to indicate valid input        
+                } catch (NumberFormatException e) {
+                    // Handle case where input isn't a valid double (e.g., multiple dots)
+                    JOptionPane.showMessageDialog(null, "Invalid number format.");
+                    return false;  // Return false to indicate invalid input
+                }
+            } else {
+                // If input contains non-numeric characters, display an error message
+                JOptionPane.showMessageDialog(null, "Only numeric values are allowed.");
+                return false;  // Return false to indicate invalid input
+            }
+        }
+        return false;
+    }
+    
+    //handling selection periond------
+    public static int selectionPeriod(String input) {
+      // Initialize n value
+      int nValue = 1;  // Default value for Annually
+
+      // Determine the value of n based on the selected option
+      switch (input) {
+          case "Annually":
+              nValue = 1;
+              break;
+          case "Semiannually":
+              nValue = 2;
+              break;
+          case "Quarterly":
+              nValue = 4;
+              break;
+          case "Monthly":
+              nValue = 12;
+              break;
+          case "Semimonthly":
+              nValue = 24;
+              break;
+          case "Biweekly":
+              nValue = 26;
+              break;
+          case "Weekly":
+              nValue = 52;
+              break;
+          case "Daily":
+              nValue = 365;
+              break;
+          case "Continuously":
+              nValue = -1;  // Use a special value to represent continuous compounding
+              break;
+          default:
+              nValue = 1;  // Default value (Annually)
+        }
+
+        return nValue;
+    }
+    //Formula ---------------------------------------------------------------------------------
+       // Function to calculate the effective interest rate
+    public static double effectiveInterestRate(double r, int n) {
+        return Math.pow(1 + r / n, n) - 1;
+    }
+
+    // Function to calculate the nominal interest rate from the effective rate
+    public static double nominalInterestRate(double ER, int a) {
+        return a * (Math.pow(1 + ER, 1.0 / a) - 1);
+    }
+    //--------------------------------BeginningCompountInterestRate
+    
+
+    // Function to calculate future value with nominal interest rate and contributions
+    public static double interestRateBegining(double PI, double Ca, double Cm, double r, int a, int n, double t) {
+        double FV = 0;
+
+        // Step 1: Calculate effective interest rate
+        double ER = effectiveInterestRate(r, n);
+
+        // Step 2: Calculate nominal interest rate
+        double NR = nominalInterestRate(ER, a);
+
+        // Step 3: Calculate future value using the nominal interest rate (NR) with annual contributions
+        FV += Ca * ((Math.pow(1 + NR / a, a * t) - 1) / (NR / a)) * (1 + NR / a);
+
+        // Recalculate NR for monthly contributions
+        NR = nominalInterestRate(ER, 12);  // a = 12 for monthly
+        int m = 12;
+        FV += Cm * ((Math.pow(1 + NR / m, m * t) - 1) / (NR / m)) * (1 + NR / m);
+
+        // Add the primary investment compounded annually
+        FV += PI * Math.pow(1 + r / n, n * t);
+
+        return FV;
+    }
+    
+        // Step 3: Function to calculate the future value using nominal interest rate and contributions
+    public static double interestrateEND(double PI, double Ca, double Cm, double r, int a, int n, double t) {
+        double FV = 0;
+
+        // Step 1: Calculate effective interest rate
+        double ER = effectiveInterestRate(r, n);
+
+        // Step 2: Calculate nominal interest rate
+        double NR = nominalInterestRate(ER, a);
+
+        // Step 3: Calculate future value using the nominal interest rate (NR) with annual contributions
+        FV += Ca * ((Math.pow(1 + NR / a, a * t) - 1) / (NR / a));
+
+        // Recalculate NR for monthly contributions
+        NR = nominalInterestRate(ER, 12);  // a = 12 for monthly
+        int m = 12;
+        FV += Cm * ((Math.pow(1 + NR / m, m * t) - 1) / (NR / m));
+
+        // Add the primary investment compounded annually
+        FV += PI * Math.pow(1 + r / n, n * t);
+
+        return FV;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //-------------------------------------------------------------------------------------------------
     public static boolean isPositiveNumber(String num){
         try{
             double val = Double.parseDouble(num); // Convert string to a double.
@@ -101,4 +264,6 @@ public class Helper {
         return monthlyPayment; // Returns the calculated monthly payment
         }
     
+        
+        
 }
