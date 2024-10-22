@@ -611,14 +611,12 @@ String aboutMessage = "<html>"
         InterestRateBeggnning = new javax.swing.JRadioButton();
         InterestRateEnd = new javax.swing.JRadioButton();
         jLabel35 = new javax.swing.JLabel();
-        InterestRateInvestmentLengthMonths = new javax.swing.JTextField();
         jLabel50 = new javax.swing.JLabel();
         InterestRateCompoundPeriods = new javax.swing.JComboBox<>();
         jLabel117 = new javax.swing.JLabel();
         InterestRateInterest = new javax.swing.JTextField();
         InterestRateInvestmentLengthYears = new javax.swing.JTextField();
         jLabel119 = new javax.swing.JLabel();
-        jLabel122 = new javax.swing.JLabel();
         jPanel34 = new javax.swing.JPanel();
         InterestRateOutput = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
@@ -2880,11 +2878,11 @@ String aboutMessage = "<html>"
         MathCalculatorLayout.setHorizontalGroup(
             MathCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MathCalculatorLayout.createSequentialGroup()
-                .addContainerGap(389, Short.MAX_VALUE)
+                .addContainerGap(390, Short.MAX_VALUE)
                 .addComponent(jLabel39)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(294, Short.MAX_VALUE))
+                .addContainerGap(296, Short.MAX_VALUE))
         );
         MathCalculatorLayout.setVerticalGroup(
             MathCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2910,11 +2908,11 @@ String aboutMessage = "<html>"
         FitnessAndHealthCalculatorLayout.setHorizontalGroup(
             FitnessAndHealthCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FitnessAndHealthCalculatorLayout.createSequentialGroup()
-                .addContainerGap(380, Short.MAX_VALUE)
+                .addContainerGap(381, Short.MAX_VALUE)
                 .addComponent(jLabel37)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(291, Short.MAX_VALUE))
+                .addContainerGap(293, Short.MAX_VALUE))
         );
         FitnessAndHealthCalculatorLayout.setVerticalGroup(
             FitnessAndHealthCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2940,11 +2938,11 @@ String aboutMessage = "<html>"
         OtherCalculatorLayout.setHorizontalGroup(
             OtherCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(OtherCalculatorLayout.createSequentialGroup()
-                .addContainerGap(356, Short.MAX_VALUE)
+                .addContainerGap(357, Short.MAX_VALUE)
                 .addComponent(jLabel46)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(327, Short.MAX_VALUE))
+                .addContainerGap(329, Short.MAX_VALUE))
         );
         OtherCalculatorLayout.setVerticalGroup(
             OtherCalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3506,14 +3504,6 @@ String aboutMessage = "<html>"
         jLabel35.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel35.setText("Interest Rate                  %");
 
-        InterestRateInvestmentLengthMonths.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        InterestRateInvestmentLengthMonths.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        InterestRateInvestmentLengthMonths.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                InterestRateInvestmentLengthMonthsKeyReleased(evt);
-            }
-        });
-
         jLabel50.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel50.setText("Compound");
 
@@ -3540,9 +3530,6 @@ String aboutMessage = "<html>"
 
         jLabel119.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel119.setText("Years");
-
-        jLabel122.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel122.setText("Months");
 
         javax.swing.GroupLayout jPanel33Layout = new javax.swing.GroupLayout(jPanel33);
         jPanel33.setLayout(jPanel33Layout);
@@ -3582,18 +3569,11 @@ String aboutMessage = "<html>"
                         .addComponent(InterestRateInterest))
                     .addGroup(jPanel33Layout.createSequentialGroup()
                         .addComponent(jLabel117, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel33Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
-                                .addComponent(jLabel119, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(86, 86, 86))
-                            .addGroup(jPanel33Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(InterestRateInvestmentLengthYears)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                        .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel122, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(InterestRateInvestmentLengthMonths, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(InterestRateInvestmentLengthYears, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel119, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(80, 80, 80)))
                 .addGap(17, 17, 17))
         );
         jPanel33Layout.setVerticalGroup(
@@ -3626,13 +3606,9 @@ String aboutMessage = "<html>"
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel117, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(InterestRateInvestmentLengthMonths, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(InterestRateInvestmentLengthYears, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel119, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel122, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(InterestRateInvestmentLengthYears, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel119))
+                .addGap(24, 24, 24)
                 .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(InterestRateCalculatorCalculateBTN)
                     .addComponent(InterestRateCalculatorClearBTN))
@@ -3989,7 +3965,7 @@ String aboutMessage = "<html>"
         InterestRateEnd.setSelected(false);
         InterestRateInterest.setText("");
         InterestRateInvestmentLengthYears.setText("");
-        InterestRateInvestmentLengthMonths.setText("");
+        
         
     }//GEN-LAST:event_InterestRateCalculatorClearBTNActionPerformed
 
@@ -4059,12 +4035,6 @@ String aboutMessage = "<html>"
         }
     }//GEN-LAST:event_InterestRateInvestmentLengthYearsKeyReleased
 
-    private void InterestRateInvestmentLengthMonthsKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_InterestRateInvestmentLengthMonthsKeyReleased
-       if (!Helper.isWholeNumber(InterestRateInvestmentLengthMonths.getText().replaceAll("\\s", ""))){
-            Helper.InterestRateCalculatorInputValidation(InterestRateInvestmentLengthMonths.getText().replaceAll("\\s", ""));
-        }
-    }//GEN-LAST:event_InterestRateInvestmentLengthMonthsKeyReleased
-
     private void InterestRateCalculatorCalculateBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InterestRateCalculatorCalculateBTNActionPerformed
       // Retrieve the selected item from the InterestRateCompoundPeriods combo box
         String selectedOption = (String) InterestRateCompoundPeriods.getSelectedItem();
@@ -4085,18 +4055,27 @@ String aboutMessage = "<html>"
         int n = Helper.selectionPeriod(selectedOption);
         double t = Double.parseDouble(InterestRateInvestmentLengthYears.getText());
         
+        
+        
+        
+        
         double FV_year = 0;
 
-
-        
         if (InterestRateBeggnning.isSelected()) {
-            FV_year += Helper.interestRateBegining(PI, Ca, Cm, r, a, n, t);
+            if ("Continuously".equals(selectedOption)){
+                FV_year +=Helper.future_valueBeginning(PI, Ca, Cm, r, t);
+            }else{
+            FV_year += Helper.interestRateBegining(PI, Ca, Cm, r, a, n, t);}
         }
 
         // Check if InterestRateEnd is selected
         if (InterestRateEnd.isSelected()) {
+             if ("Continuously".equals(selectedOption)){
+                 FV_year +=Helper.future_valueEnd(PI, Ca, Cm, r, t);
+             }
+             else{
              // Calculate future value using nominal interest rate and contributions
-          FV_year += Helper.interestrateEND(PI, Ca, Cm, r, a, n, t);
+                FV_year += Helper.interestrateEND(PI, Ca, Cm, r, a, n, t);}
         }
         
         InterestRateOutput.setText("Ending Balance " + String.format("%.2f", FV_year));
@@ -4584,7 +4563,6 @@ private void setMessage4() {
     private javax.swing.JRadioButton InterestRateEnd;
     private javax.swing.JTextField InterestRateInitialInvestment;
     private javax.swing.JTextField InterestRateInterest;
-    private javax.swing.JTextField InterestRateInvestmentLengthMonths;
     private javax.swing.JTextField InterestRateInvestmentLengthYears;
     private javax.swing.JTextField InterestRateMonthlyContribution;
     private javax.swing.JLabel InterestRateOutput;
@@ -4684,7 +4662,6 @@ private void setMessage4() {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel120;
     private javax.swing.JLabel jLabel121;
-    private javax.swing.JLabel jLabel122;
     private javax.swing.JLabel jLabel124;
     private javax.swing.JLabel jLabel125;
     private javax.swing.JLabel jLabel126;
