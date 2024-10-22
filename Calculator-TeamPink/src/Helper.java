@@ -166,6 +166,55 @@ public class Helper {
 
         return FV;
     }
+    
+    //--------------------------------------------------------------------------------------------------formula for continuous 
+        // Function to calculate future value for end contributions
+    public static double future_valueEnd(double PI, double Ca, double Cm, double r, double t) {
+        // Continuous compounding for primary investment
+        double continuousP = PI * Math.exp(r * t);
+
+        // Future value for annual contributions at the end
+        double endFVAnnual = 0;
+        for (int i = 1; i < t; i++) {
+            double endInterest = (endFVAnnual + Ca) * Math.exp(r);
+            endFVAnnual = endInterest;
+        }
+        System.out.println("End (annual): " + (endFVAnnual + Ca));
+
+        // Future value for monthly contributions at the end
+        double endFVMonthly = 0;
+        for (int i = 1; i < t * 12; i++) {
+            double endInterest = (endFVMonthly + Cm) * Math.exp(r / 12);
+            endFVMonthly = endInterest;
+        }
+        System.out.println("End (monthly): " + (endFVMonthly + Cm));
+
+        return (continuousP) + (endFVAnnual + Ca) + (endFVMonthly + Cm);
+    }
+
+    // Function to calculate future value for beginning contributions
+    public static double future_valueBeginning(double PI, double Ca, double Cm, double r, double t) {
+        // Continuous compounding for primary investment
+        double continuousP = PI * Math.exp(r * t);
+
+        // Future value for annual contributions at the beginning
+        double beginningFVAnnual = 0;
+        for (int i = 1; i <= t; i++) {
+            double annualInterest = (beginningFVAnnual + Ca) * Math.exp(r);
+            beginningFVAnnual = annualInterest;
+        }
+        System.out.println("Beginning (annual): " + beginningFVAnnual);
+
+        // Future value for monthly contributions at the beginning
+        double beginningFVMonthly = 0;
+        for (int i = 1; i <= t * 12; i++) {
+            double monthlyInterest = (beginningFVMonthly + Cm) * Math.exp(r / 12);
+            beginningFVMonthly = monthlyInterest;
+        }
+        System.out.println("Beginning (monthly): " + beginningFVMonthly);
+
+        return (continuousP) + beginningFVAnnual + beginningFVMonthly;
+    }
 
     
     
