@@ -4036,7 +4036,8 @@ String aboutMessage = "<html>"
     }//GEN-LAST:event_InterestRateInvestmentLengthYearsKeyReleased
 
     private void InterestRateCalculatorCalculateBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InterestRateCalculatorCalculateBTNActionPerformed
-      // Retrieve the selected item from the InterestRateCompoundPeriods combo box
+        try{
+         // Retrieve the selected item from the InterestRateCompoundPeriods combo box
         String selectedOption = (String) InterestRateCompoundPeriods.getSelectedItem();
         
         Helper.InterestRateCalculatorInputValidation(InterestRateInitialInvestment.getText());
@@ -4081,6 +4082,11 @@ String aboutMessage = "<html>"
         InterestRateOutput.setText("Ending Balance " + String.format("%.2f", FV_year));
 
    
+        }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(null, "Empty fields!");
+        }
+       
     }//GEN-LAST:event_InterestRateCalculatorCalculateBTNActionPerformed
     
     
