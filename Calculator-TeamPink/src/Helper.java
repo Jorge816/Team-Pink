@@ -217,7 +217,47 @@ public class Helper {
     }
 
     
+    //-------------------------------------------------------------------------------------------------------------------------------------Roth IRA Calculator
     
+    //-------------------------------------------------No
+        public static double calculate_MaximizeContributionNo(double PI, double Ca, double r, int n) {
+        // Calculate FVcurrentBalance
+        double FVcurrentBalance = PI * Math.pow((1 + r), n);
+        System.out.println("NO- current: " + FVcurrentBalance);
+
+        // Calculate FVanualcontribution
+        double FVanualcontribution = Ca * (Math.pow((1 + r), n) - 1) / r;
+        System.out.println("NO annual: " + FVanualcontribution);
+
+        // Calculate total future value
+        double futureValue = FVanualcontribution + FVcurrentBalance;
+        System.out.println("Total future value: " + futureValue);
+        return futureValue;
+    }
+        //------------------------------------------Yes
+        public static double calculate_MaximizeContributionYes(double PI, double Ca, double r, int C_age, int R_age) {
+        double balance = 0;
+
+        if (R_age <= 50 || (C_age >= 50 && R_age >= 50)) {
+            int Under50 = R_age - C_age;
+            balance += Ca * (Math.pow(1 + r, Under50) - 1) / r;
+            balance += PI * Math.pow(1 + r, Under50);
+        } else {
+            int Under50 = 50 - C_age;
+            balance += Ca * (Math.pow(1 + r, Under50) - 1) / r;
+            balance += PI * Math.pow(1 + r, Under50);
+
+            int Over50 = R_age - 50;
+            for (int i = 0; i < Over50; i++) {
+                double RothIraunder50 = balance * r;
+                balance += RothIraunder50 + 8000;
+            }
+        }
+
+        System.out.println("Balance: " + balance);
+
+        return balance;
+    }
     
     
     
