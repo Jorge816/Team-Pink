@@ -4284,20 +4284,7 @@ String aboutMessage = "<html>"
         String tradeInValueValue = tradeInValueInput.getText();
         String amtOwnedTradeInValue = amtOwnedInput.getText();
         String salesTaxValue = salesTaxInput.getText();
-        String otherFeesValue = otherFeesInput.getText();
-        
-        /*double autoPrice = Double.parseDouble(autoPriceValue);
-        double loanTerm = Double.parseDouble(loanTermValue);
-        double interestRate = Double.parseDouble(interestRateValue);
-        double cashIncentives = Double.parseDouble(cashIncentivesValue);
-        double downPayment = Double.parseDouble(downPaymentValue);
-        double tradeInValue = Double.parseDouble(tradeInValueValue);
-        double amtOwnedTradeIn = Double.parseDouble(amtOwnedTradeInValue);
-        double salesTax = Double.parseDouble(salesTaxValue);
-        double otherFees = Double.parseDouble(otherFeesValue);*/
-        
-        
-        
+        String otherFeesValue = otherFeesInput.getText();      
         double[] result = Helper.calcAutoLoan(autoPriceValue, loanTermValue, interestRateValue, cashIncentivesValue, downPaymentValue, tradeInValueValue, amtOwnedTradeInValue, salesTaxValue, otherFeesValue);
         if(result[0] == -1 || result[1] == -1){
             resultOutput.setText("");
@@ -4310,23 +4297,6 @@ String aboutMessage = "<html>"
         }else{
             resultOutput.setText(resultFormat.format(result[0]));
         }
-        
-        /*double paymentWithoutFees = result[0];
-        double paymentWithFees = result[1]; 
-        
-        if(includedFeesAuto.isSelected()){
-            DecimalFormat resultFormat = new DecimalFormat("$#,###.00");
-            resultOutput.setText(resultFormat.format(paymentWithFees));
-        }else{
-            DecimalFormat resultFormat = new DecimalFormat("$#,###.00");
-            resultOutput.setText(resultFormat.format(paymentWithoutFees));
-        }*/
-        
-        //DecimalFormat resultFormat = new DecimalFormat("$#,###.00");
-        //resultOutput.setText(resultFormat.format(result));
-        
-        
-        //includedFeesAutoActionPerformed(evt);
     }//GEN-LAST:event_AutoLoancalcButtonActionPerformed
 
     private void AutoLoanclearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AutoLoanclearButtonActionPerformed
