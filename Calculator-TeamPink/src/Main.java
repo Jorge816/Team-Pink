@@ -14,7 +14,6 @@ import java.util.HashMap;
 import java.awt.Image;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.text.DecimalFormat;
 
 
 public class Main extends javax.swing.JFrame {
@@ -543,6 +542,7 @@ String aboutMessage = "<html>"
         jPanel62 = new javax.swing.JPanel();
         jPanel64 = new javax.swing.JPanel();
         jLabel141 = new javax.swing.JLabel();
+<<<<<<< Updated upstream
         autoLoanAutoPriceInput = new javax.swing.JTextField();
         autoLoanCashIncentivesInput = new javax.swing.JTextField();
         jLabel142 = new javax.swing.JLabel();
@@ -565,6 +565,30 @@ String aboutMessage = "<html>"
         jLabel150 = new javax.swing.JLabel();
         autoLoanOtherFeesInput = new javax.swing.JTextField();
         autoLoanIncludedFeesAuto = new javax.swing.JCheckBox();
+=======
+        jTextField47 = new javax.swing.JTextField();
+        jTextField101 = new javax.swing.JTextField();
+        jLabel142 = new javax.swing.JLabel();
+        jLabel143 = new javax.swing.JLabel();
+        jTextField102 = new javax.swing.JTextField();
+        jLabel144 = new javax.swing.JLabel();
+        jTextField103 = new javax.swing.JTextField();
+        jButton23 = new javax.swing.JButton();
+        jButton24 = new javax.swing.JButton();
+        jLabel145 = new javax.swing.JLabel();
+        jTextField48 = new javax.swing.JTextField();
+        jLabel146 = new javax.swing.JLabel();
+        jLabel147 = new javax.swing.JLabel();
+        jTextField104 = new javax.swing.JTextField();
+        jTextField105 = new javax.swing.JTextField();
+        jLabel148 = new javax.swing.JLabel();
+        jLabel149 = new javax.swing.JLabel();
+        jTextField106 = new javax.swing.JTextField();
+        jComboBox28 = new javax.swing.JComboBox<>();
+        jLabel150 = new javax.swing.JLabel();
+        jTextField107 = new javax.swing.JTextField();
+        jCheckBox4 = new javax.swing.JCheckBox();
+>>>>>>> Stashed changes
         jScrollPane1 = new javax.swing.JScrollPane();
         InstructionsAutoLoanCalculator = new javax.swing.JTextPane();
         jPanel68 = new javax.swing.JPanel();
@@ -595,7 +619,7 @@ String aboutMessage = "<html>"
         jScrollPane3 = new javax.swing.JScrollPane();
         InstructionsAutoLoan2Calculator = new javax.swing.JTextPane();
         jPanel63 = new javax.swing.JPanel();
-        resultOutput = new javax.swing.JLabel();
+        jLabel140 = new javax.swing.JLabel();
         InterestRate = new javax.swing.JPanel();
         jPanel32 = new javax.swing.JPanel();
         jPanel33 = new javax.swing.JPanel();
@@ -1404,9 +1428,9 @@ String aboutMessage = "<html>"
         jPanel39Layout.setHorizontalGroup(
             jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel39Layout.createSequentialGroup()
-                .addContainerGap(386, Short.MAX_VALUE)
+                .addContainerGap(380, Short.MAX_VALUE)
                 .addComponent(jPanel40, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1624,7 +1648,7 @@ String aboutMessage = "<html>"
                 .addGroup(jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(8, Short.MAX_VALUE))
         );
 
         jPanel44.setBackground(new java.awt.Color(204, 255, 204));
@@ -1639,7 +1663,7 @@ String aboutMessage = "<html>"
             .addGroup(jPanel44Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel81, javax.swing.GroupLayout.PREFERRED_SIZE, 387, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         jPanel44Layout.setVerticalGroup(
             jPanel44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2213,7 +2237,7 @@ String aboutMessage = "<html>"
                 .addComponent(jLabel26, javax.swing.GroupLayout.DEFAULT_SIZE, 17, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField9, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         jButton3.setText("Calculate");
@@ -2463,7 +2487,7 @@ String aboutMessage = "<html>"
                 .addGroup(jPanel47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RothIRACalculateBTN)
                     .addComponent(RothIRAclearBTN))
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel48.setBackground(new java.awt.Color(204, 255, 204));
@@ -2510,8 +2534,8 @@ String aboutMessage = "<html>"
                 .addGroup(jPanel46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane6)
                     .addGroup(jPanel46Layout.createSequentialGroup()
-                        .addComponent(jPanel47, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addComponent(jPanel48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(39, 39, 39))
         );
@@ -2529,7 +2553,7 @@ String aboutMessage = "<html>"
             RothIRACalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RothIRACalculatorLayout.createSequentialGroup()
                 .addContainerGap(55, Short.MAX_VALUE)
-                .addComponent(jPanel46, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, 473, Short.MAX_VALUE)
                 .addContainerGap(62, Short.MAX_VALUE))
         );
 
@@ -2639,7 +2663,7 @@ String aboutMessage = "<html>"
                 .addGroup(jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(8, Short.MAX_VALUE))
         );
 
         InstructionsDownPaymentCalculator.setBackground(new java.awt.Color(255, 215, 255));
@@ -2832,7 +2856,7 @@ String aboutMessage = "<html>"
                 .addGroup(jPanel57Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton19)
                     .addComponent(jButton20))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(9, Short.MAX_VALUE))
         );
 
         jPanel58.setBackground(new java.awt.Color(204, 255, 204));
@@ -3133,18 +3157,22 @@ String aboutMessage = "<html>"
 
         jLabel141.setText("Interest Rate");
 
+<<<<<<< Updated upstream
         autoLoanCashIncentivesInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 autoLoanCashIncentivesInputActionPerformed(evt);
             }
         });
 
+=======
+>>>>>>> Stashed changes
         jLabel142.setText("Cash Incentives");
 
         jLabel143.setText("Trade-in value");
 
         jLabel144.setText("Auto Price ");
 
+<<<<<<< Updated upstream
         autoLoanCalcButton.setText("Calculate");
         autoLoanCalcButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3158,6 +3186,11 @@ String aboutMessage = "<html>"
                 AutoLoanautoLoanClearButtonActionPerformed(evt);
             }
         });
+=======
+        jButton23.setText("Calculate");
+
+        jButton24.setText("Clear");
+>>>>>>> Stashed changes
 
         jLabel145.setText("Loan Term");
 
@@ -3173,7 +3206,11 @@ String aboutMessage = "<html>"
 
         jLabel150.setText("Title, Registration and Other Fees");
 
+<<<<<<< Updated upstream
         autoLoanIncludedFeesAuto.setText("Include All Fees in Loan");
+=======
+        jCheckBox4.setText("Include All Fees in Loan");
+>>>>>>> Stashed changes
 
         javax.swing.GroupLayout jPanel64Layout = new javax.swing.GroupLayout(jPanel64);
         jPanel64.setLayout(jPanel64Layout);
@@ -3183,9 +3220,15 @@ String aboutMessage = "<html>"
                 .addContainerGap()
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+<<<<<<< Updated upstream
                         .addComponent(autoLoanCalcButton, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(autoLoanIncludedFeesAuto, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+=======
+                        .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jCheckBox4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+>>>>>>> Stashed changes
                             .addComponent(jLabel145, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel141, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel146, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -3198,6 +3241,7 @@ String aboutMessage = "<html>"
                     .addComponent(jLabel143, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+<<<<<<< Updated upstream
                     .addComponent(autoLoanClearButton, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(autoLoanSalesTaxInput)
                     .addComponent(autoLoanLoanTermInput)
@@ -3209,6 +3253,19 @@ String aboutMessage = "<html>"
                     .addComponent(autoLoanTradeInValueInput)
                     .addComponent(jComboBox28, 0, 167, Short.MAX_VALUE)
                     .addComponent(autoLoanOtherFeesInput))
+=======
+                    .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField104)
+                    .addComponent(jTextField48)
+                    .addComponent(jTextField47)
+                    .addComponent(jTextField103)
+                    .addComponent(jTextField101)
+                    .addComponent(jTextField106)
+                    .addComponent(jTextField105)
+                    .addComponent(jTextField102)
+                    .addComponent(jComboBox28, 0, 167, Short.MAX_VALUE)
+                    .addComponent(jTextField107))
+>>>>>>> Stashed changes
                 .addGap(0, 65, Short.MAX_VALUE))
         );
         jPanel64Layout.setVerticalGroup(
@@ -3217,6 +3274,7 @@ String aboutMessage = "<html>"
                 .addGap(9, 9, 9)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel144, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+<<<<<<< Updated upstream
                     .addComponent(autoLoanAutoPriceInput))
                 .addGap(3, 3, 3)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -3237,11 +3295,37 @@ String aboutMessage = "<html>"
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(autoLoanTradeInValueInput)
+=======
+                    .addComponent(jTextField47))
+                .addGap(3, 3, 3)
+                .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel145, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jTextField48))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel141)
+                    .addComponent(jTextField103))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel142)
+                    .addComponent(jTextField101))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel149)
+                    .addComponent(jTextField106))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField102)
+>>>>>>> Stashed changes
                     .addComponent(jLabel143))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel146)
+<<<<<<< Updated upstream
                     .addComponent(autoLoanAmtOwnedInput))
+=======
+                    .addComponent(jTextField105))
+>>>>>>> Stashed changes
                 .addGap(9, 9, 9)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel147)
@@ -3249,6 +3333,7 @@ String aboutMessage = "<html>"
                 .addGap(11, 11, 11)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel148)
+<<<<<<< Updated upstream
                     .addComponent(autoLoanSalesTaxInput))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -3260,6 +3345,19 @@ String aboutMessage = "<html>"
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(autoLoanCalcButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(autoLoanClearButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                    .addComponent(jTextField104))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel150)
+                    .addComponent(jTextField107))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jCheckBox4)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> Stashed changes
                 .addContainerGap(51, Short.MAX_VALUE))
         );
 
@@ -3445,7 +3543,7 @@ String aboutMessage = "<html>"
         jPanel63.setBackground(new java.awt.Color(204, 255, 204));
         jPanel63.setEnabled(false);
 
-        resultOutput.setText("Output here");
+        jLabel140.setText("Output here");
 
         javax.swing.GroupLayout jPanel63Layout = new javax.swing.GroupLayout(jPanel63);
         jPanel63.setLayout(jPanel63Layout);
@@ -3453,14 +3551,14 @@ String aboutMessage = "<html>"
             jPanel63Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel63Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(resultOutput, javax.swing.GroupLayout.DEFAULT_SIZE, 419, Short.MAX_VALUE)
+                .addComponent(jLabel140, javax.swing.GroupLayout.DEFAULT_SIZE, 419, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel63Layout.setVerticalGroup(
             jPanel63Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel63Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(resultOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel140, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout AutoLoanLayout = new javax.swing.GroupLayout(AutoLoan);
@@ -3684,7 +3782,7 @@ String aboutMessage = "<html>"
         jPanel34Layout.setVerticalGroup(
             jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel34Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(9, Short.MAX_VALUE)
                 .addComponent(InterestRateOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -3754,7 +3852,7 @@ String aboutMessage = "<html>"
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(88, 88, 88)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addContainerGap(105, Short.MAX_VALUE))
             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel4Layout.createSequentialGroup()
                     .addGap(2, 2, 2)
@@ -4260,6 +4358,7 @@ String aboutMessage = "<html>"
             JOptionPane.showMessageDialog(null, "Empty fields!");
         }
     }//GEN-LAST:event_RothIRACalculateBTNActionPerformed
+<<<<<<< Updated upstream
 
     private void autoLoanCashIncentivesInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_autoLoanCashIncentivesInputActionPerformed
         // TODO add your handling code here:
@@ -4305,6 +4404,8 @@ String aboutMessage = "<html>"
         // Clear the output field
         resultOutput.setText("");
     }//GEN-LAST:event_AutoLoanautoLoanClearButtonActionPerformed
+=======
+>>>>>>> Stashed changes
     
     
     
@@ -4813,6 +4914,7 @@ private void setMessage4() {
     private javax.swing.JLabel RothIRAoutput;
     private javax.swing.JTextField RothIRaRetirementAge;
     private javax.swing.JButton autoCalculatorBTN4;
+<<<<<<< Updated upstream
     private javax.swing.JTextField autoLoanAmtOwnedInput;
     private javax.swing.JTextField autoLoanAutoPriceInput;
     private javax.swing.JButton autoLoanCalcButton;
@@ -4825,6 +4927,8 @@ private void setMessage4() {
     private javax.swing.JTextField autoLoanOtherFeesInput;
     private javax.swing.JTextField autoLoanSalesTaxInput;
     private javax.swing.JTextField autoLoanTradeInValueInput;
+=======
+>>>>>>> Stashed changes
     private javax.swing.JLabel azusena;
     private javax.swing.JButton btnOtherCalculators;
     private javax.swing.JButton btnfinancialCalculator;
@@ -4846,6 +4950,8 @@ private void setMessage4() {
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
+    private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton3;
@@ -4855,6 +4961,7 @@ private void setMessage4() {
     private javax.swing.JButton jButton9;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;
+    private javax.swing.JCheckBox jCheckBox4;
     private javax.swing.JCheckBox jCheckBox6;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox10;
@@ -4916,6 +5023,7 @@ private void setMessage4() {
     private javax.swing.JLabel jLabel134;
     private javax.swing.JLabel jLabel138;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel140;
     private javax.swing.JLabel jLabel141;
     private javax.swing.JLabel jLabel142;
     private javax.swing.JLabel jLabel143;
@@ -5091,6 +5199,13 @@ private void setMessage4() {
     private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField101;
+    private javax.swing.JTextField jTextField102;
+    private javax.swing.JTextField jTextField103;
+    private javax.swing.JTextField jTextField104;
+    private javax.swing.JTextField jTextField105;
+    private javax.swing.JTextField jTextField106;
+    private javax.swing.JTextField jTextField107;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField115;
     private javax.swing.JTextField jTextField116;
@@ -5127,6 +5242,8 @@ private void setMessage4() {
     private javax.swing.JTextField jTextField44;
     private javax.swing.JTextField jTextField45;
     private javax.swing.JTextField jTextField46;
+    private javax.swing.JTextField jTextField47;
+    private javax.swing.JTextField jTextField48;
     private javax.swing.JTextField jTextField49;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField50;
@@ -5180,7 +5297,6 @@ private void setMessage4() {
     private javax.swing.JLabel pinkPanterCbtn;
     private javax.swing.JMenu quitBnt;
     private javax.swing.JPanel rentandbuy;
-    private javax.swing.JLabel resultOutput;
     private javax.swing.JPanel retirementCalculator3;
     // End of variables declaration//GEN-END:variables
 }
