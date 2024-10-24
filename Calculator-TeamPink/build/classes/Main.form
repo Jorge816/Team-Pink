@@ -3050,7 +3050,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace pref="55" max="32767" attributes="0"/>
-                      <Component id="jPanel46" max="32767" attributes="0"/>
+                      <Component id="jPanel46" pref="473" max="32767" attributes="0"/>
                       <EmptySpace pref="62" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -3086,8 +3086,8 @@
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="jScrollPane6" max="32767" attributes="0"/>
                               <Group type="102" attributes="0">
-                                  <Component id="jPanel47" max="32767" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jPanel47" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jPanel48" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -3209,7 +3209,7 @@
                                   <Component id="RothIRACalculateBTN" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="RothIRAclearBTN" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
