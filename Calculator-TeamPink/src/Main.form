@@ -998,9 +998,9 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace pref="386" max="32767" attributes="0"/>
+                          <EmptySpace pref="380" max="32767" attributes="0"/>
                           <Component id="jPanel40" min="-2" pref="274" max="-2" attributes="0"/>
-                          <EmptySpace pref="41" max="32767" attributes="0"/>
+                          <EmptySpace pref="35" max="32767" attributes="0"/>
                           <Component id="jScrollPane8" min="-2" pref="353" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -1744,7 +1744,7 @@
                                   <Component id="jButton12" alignment="3" max="32767" attributes="0"/>
                                   <Component id="jButton14" alignment="3" max="32767" attributes="0"/>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="8" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1895,7 +1895,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel81" min="-2" pref="387" max="-2" attributes="0"/>
-                              <EmptySpace pref="20" max="32767" attributes="0"/>
+                              <EmptySpace pref="14" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -2910,7 +2910,7 @@
                               <Component id="jLabel26" pref="17" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jTextField9" pref="23" max="32767" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="12" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -3050,7 +3050,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace pref="55" max="32767" attributes="0"/>
-                      <Component id="jPanel46" max="32767" attributes="0"/>
+                      <Component id="jPanel46" pref="473" max="32767" attributes="0"/>
                       <EmptySpace pref="62" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -3086,8 +3086,8 @@
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="jScrollPane6" max="32767" attributes="0"/>
                               <Group type="102" attributes="0">
-                                  <Component id="jPanel47" max="32767" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jPanel47" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jPanel48" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -3209,7 +3209,7 @@
                                   <Component id="RothIRACalculateBTN" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="RothIRAclearBTN" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -3570,7 +3570,7 @@
                                   <Component id="jButton21" alignment="3" max="32767" attributes="0"/>
                                   <Component id="jButton22" alignment="3" max="32767" attributes="0"/>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="8" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -3862,7 +3862,7 @@
                                   <Component id="jButton19" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jButton20" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="9" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -4547,9 +4547,15 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="103" groupAlignment="1" attributes="0">
+<<<<<<< Updated upstream
                                           <Component id="autoLoanCalcButton" min="-2" pref="133" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                               <Component id="autoLoanIncludedFeesAuto" alignment="0" max="32767" attributes="0"/>
+=======
+                                          <Component id="jButton23" min="-2" pref="133" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="jCheckBox4" alignment="0" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                                               <Component id="jLabel145" max="32767" attributes="0"/>
                                               <Component id="jLabel141" alignment="0" max="32767" attributes="0"/>
                                               <Component id="jLabel146" alignment="0" max="32767" attributes="0"/>
@@ -4565,6 +4571,7 @@
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
+<<<<<<< Updated upstream
                                       <Component id="autoLoanClearButton" min="-2" pref="141" max="-2" attributes="0"/>
                                       <Component id="autoLoanSalesTaxInput" alignment="0" max="32767" attributes="0"/>
                                       <Component id="autoLoanLoanTermInput" alignment="0" max="32767" attributes="0"/>
@@ -4576,6 +4583,19 @@
                                       <Component id="autoLoanTradeInValueInput" alignment="0" max="32767" attributes="0"/>
                                       <Component id="jComboBox28" alignment="0" pref="167" max="32767" attributes="0"/>
                                       <Component id="autoLoanOtherFeesInput" alignment="0" max="32767" attributes="0"/>
+=======
+                                      <Component id="jButton24" min="-2" pref="141" max="-2" attributes="0"/>
+                                      <Component id="jTextField104" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jTextField48" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jTextField47" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jTextField103" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jTextField101" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jTextField106" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jTextField105" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jTextField102" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jComboBox28" alignment="0" pref="167" max="32767" attributes="0"/>
+                                      <Component id="jTextField107" alignment="0" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                                   </Group>
                                   <EmptySpace min="0" pref="65" max="32767" attributes="0"/>
                               </Group>
@@ -4587,37 +4607,65 @@
                                   <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel144" alignment="3" max="32767" attributes="0"/>
+<<<<<<< Updated upstream
                                       <Component id="autoLoanAutoPriceInput" alignment="3" max="32767" attributes="0"/>
+=======
+                                      <Component id="jTextField47" alignment="3" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                                   </Group>
                                   <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel145" alignment="3" max="32767" attributes="0"/>
+<<<<<<< Updated upstream
                                       <Component id="autoLoanLoanTermInput" alignment="3" max="32767" attributes="0"/>
+=======
+                                      <Component id="jTextField48" alignment="3" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel141" alignment="3" min="-2" max="-2" attributes="0"/>
+<<<<<<< Updated upstream
                                       <Component id="autoLoanInterestRateInput" alignment="3" max="32767" attributes="0"/>
+=======
+                                      <Component id="jTextField103" alignment="3" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel142" alignment="3" min="-2" max="-2" attributes="0"/>
+<<<<<<< Updated upstream
                                       <Component id="autoLoanCashIncentivesInput" alignment="3" max="32767" attributes="0"/>
+=======
+                                      <Component id="jTextField101" alignment="3" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel149" alignment="3" min="-2" max="-2" attributes="0"/>
+<<<<<<< Updated upstream
                                       <Component id="autoLoanDownPaymentInput" alignment="3" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="autoLoanTradeInValueInput" alignment="3" max="32767" attributes="0"/>
+=======
+                                      <Component id="jTextField106" alignment="3" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jTextField102" alignment="3" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                                       <Component id="jLabel143" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel146" alignment="3" min="-2" max="-2" attributes="0"/>
+<<<<<<< Updated upstream
                                       <Component id="autoLoanAmtOwnedInput" alignment="3" max="32767" attributes="0"/>
+=======
+                                      <Component id="jTextField105" alignment="3" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                                   </Group>
                                   <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
@@ -4627,11 +4675,16 @@
                                   <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel148" alignment="3" min="-2" max="-2" attributes="0"/>
+<<<<<<< Updated upstream
                                       <Component id="autoLoanSalesTaxInput" alignment="3" max="32767" attributes="0"/>
+=======
+                                      <Component id="jTextField104" alignment="3" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel150" alignment="3" min="-2" max="-2" attributes="0"/>
+<<<<<<< Updated upstream
                                       <Component id="autoLoanOtherFeesInput" alignment="3" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -4640,6 +4693,16 @@
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="autoLoanCalcButton" alignment="3" max="32767" attributes="0"/>
                                       <Component id="autoLoanClearButton" alignment="3" max="32767" attributes="0"/>
+=======
+                                      <Component id="jTextField107" alignment="3" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jCheckBox4" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jButton23" alignment="3" max="32767" attributes="0"/>
+                                      <Component id="jButton24" alignment="3" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                                   </Group>
                                   <EmptySpace pref="51" max="32767" attributes="0"/>
                               </Group>
@@ -4652,12 +4715,18 @@
                             <Property name="text" type="java.lang.String" value="Interest Rate"/>
                           </Properties>
                         </Component>
+<<<<<<< Updated upstream
                         <Component class="javax.swing.JTextField" name="autoLoanAutoPriceInput">
                         </Component>
                         <Component class="javax.swing.JTextField" name="autoLoanCashIncentivesInput">
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="autoLoanCashIncentivesInputActionPerformed"/>
                           </Events>
+=======
+                        <Component class="javax.swing.JTextField" name="jTextField47">
+                        </Component>
+                        <Component class="javax.swing.JTextField" name="jTextField101">
+>>>>>>> Stashed changes
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel142">
                           <Properties>
@@ -4669,13 +4738,18 @@
                             <Property name="text" type="java.lang.String" value="Trade-in value"/>
                           </Properties>
                         </Component>
+<<<<<<< Updated upstream
                         <Component class="javax.swing.JTextField" name="autoLoanTradeInValueInput">
+=======
+                        <Component class="javax.swing.JTextField" name="jTextField102">
+>>>>>>> Stashed changes
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel144">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Auto Price "/>
                           </Properties>
                         </Component>
+<<<<<<< Updated upstream
                         <Component class="javax.swing.JTextField" name="autoLoanInterestRateInput">
                         </Component>
                         <Component class="javax.swing.JButton" name="autoLoanCalcButton">
@@ -4693,13 +4767,30 @@
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AutoLoanautoLoanClearButtonActionPerformed"/>
                           </Events>
+=======
+                        <Component class="javax.swing.JTextField" name="jTextField103">
+                        </Component>
+                        <Component class="javax.swing.JButton" name="jButton23">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Calculate"/>
+                          </Properties>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="jButton24">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Clear"/>
+                          </Properties>
+>>>>>>> Stashed changes
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel145">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Loan Term"/>
                           </Properties>
                         </Component>
+<<<<<<< Updated upstream
                         <Component class="javax.swing.JTextField" name="autoLoanLoanTermInput">
+=======
+                        <Component class="javax.swing.JTextField" name="jTextField48">
+>>>>>>> Stashed changes
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel146">
                           <Properties>
@@ -4711,9 +4802,15 @@
                             <Property name="text" type="java.lang.String" value="Your State"/>
                           </Properties>
                         </Component>
+<<<<<<< Updated upstream
                         <Component class="javax.swing.JTextField" name="autoLoanSalesTaxInput">
                         </Component>
                         <Component class="javax.swing.JTextField" name="autoLoanAmtOwnedInput">
+=======
+                        <Component class="javax.swing.JTextField" name="jTextField104">
+                        </Component>
+                        <Component class="javax.swing.JTextField" name="jTextField105">
+>>>>>>> Stashed changes
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel148">
                           <Properties>
@@ -4725,7 +4822,11 @@
                             <Property name="text" type="java.lang.String" value="Down Payment "/>
                           </Properties>
                         </Component>
+<<<<<<< Updated upstream
                         <Component class="javax.swing.JTextField" name="autoLoanDownPaymentInput">
+=======
+                        <Component class="javax.swing.JTextField" name="jTextField106">
+>>>>>>> Stashed changes
                         </Component>
                         <Component class="javax.swing.JComboBox" name="jComboBox28">
                           <Properties>
@@ -4793,9 +4894,15 @@
                             <Property name="text" type="java.lang.String" value="Title, Registration and Other Fees"/>
                           </Properties>
                         </Component>
+<<<<<<< Updated upstream
                         <Component class="javax.swing.JTextField" name="autoLoanOtherFeesInput">
                         </Component>
                         <Component class="javax.swing.JCheckBox" name="autoLoanIncludedFeesAuto">
+=======
+                        <Component class="javax.swing.JTextField" name="jTextField107">
+                        </Component>
+                        <Component class="javax.swing.JCheckBox" name="jCheckBox4">
+>>>>>>> Stashed changes
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Include All Fees in Loan"/>
                           </Properties>
@@ -5155,7 +5262,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="resultOutput" pref="419" max="32767" attributes="0"/>
+                          <Component id="jLabel140" pref="419" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -5164,13 +5271,13 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="resultOutput" min="-2" pref="55" max="-2" attributes="0"/>
+                          <Component id="jLabel140" min="-2" pref="55" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="resultOutput">
+                <Component class="javax.swing.JLabel" name="jLabel140">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Output here"/>
                   </Properties>
@@ -5551,7 +5658,7 @@
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="9" max="32767" attributes="0"/>
                               <Component id="InterestRateOutput" min="-2" pref="82" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -5651,7 +5758,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
                           <Component id="jLabel7" min="-2" pref="145" max="-2" attributes="0"/>
-                          <EmptySpace pref="111" max="32767" attributes="0"/>
+                          <EmptySpace pref="105" max="32767" attributes="0"/>
                       </Group>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
