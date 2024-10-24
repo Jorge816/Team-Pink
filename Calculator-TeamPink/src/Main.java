@@ -545,28 +545,28 @@ String aboutMessage = "<html>"
         jPanel62 = new javax.swing.JPanel();
         jPanel64 = new javax.swing.JPanel();
         jLabel141 = new javax.swing.JLabel();
-        autoPriceInput = new javax.swing.JTextField();
-        cashIncentivesInput = new javax.swing.JTextField();
+        autoLoanAutoPriceInput = new javax.swing.JTextField();
+        autoLoanCashIncentivesInput = new javax.swing.JTextField();
         jLabel142 = new javax.swing.JLabel();
         jLabel143 = new javax.swing.JLabel();
-        tradeInValueInput = new javax.swing.JTextField();
+        autoLoanTradeInValueInput = new javax.swing.JTextField();
         jLabel144 = new javax.swing.JLabel();
-        interestRateInput = new javax.swing.JTextField();
-        calcButton = new javax.swing.JButton();
-        clearButton = new javax.swing.JButton();
+        autoLoanInterestRateInput = new javax.swing.JTextField();
+        autoLoanCalcButton = new javax.swing.JButton();
+        autoLoanClearButton = new javax.swing.JButton();
         jLabel145 = new javax.swing.JLabel();
-        loanTermInput = new javax.swing.JTextField();
+        autoLoanLoanTermInput = new javax.swing.JTextField();
         jLabel146 = new javax.swing.JLabel();
         jLabel147 = new javax.swing.JLabel();
-        salesTaxInput = new javax.swing.JTextField();
-        amtOwnedInput = new javax.swing.JTextField();
+        autoLoanSalesTaxInput = new javax.swing.JTextField();
+        autoLoanAmtOwnedInput = new javax.swing.JTextField();
         jLabel148 = new javax.swing.JLabel();
         jLabel149 = new javax.swing.JLabel();
-        downPaymentInput = new javax.swing.JTextField();
+        autoLoanDownPaymentInput = new javax.swing.JTextField();
         jComboBox28 = new javax.swing.JComboBox<>();
         jLabel150 = new javax.swing.JLabel();
-        otherFeesInput = new javax.swing.JTextField();
-        includedFeesAuto = new javax.swing.JCheckBox();
+        autoLoanOtherFeesInput = new javax.swing.JTextField();
+        autoLoanIncludedFeesAuto = new javax.swing.JCheckBox();
         jScrollPane1 = new javax.swing.JScrollPane();
         InstructionsAutoLoanCalculator = new javax.swing.JTextPane();
         jPanel68 = new javax.swing.JPanel();
@@ -3143,9 +3143,9 @@ String aboutMessage = "<html>"
 
         jLabel141.setText("Interest Rate");
 
-        cashIncentivesInput.addActionListener(new java.awt.event.ActionListener() {
+        autoLoanCashIncentivesInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cashIncentivesInputActionPerformed(evt);
+                autoLoanCashIncentivesInputActionPerformed(evt);
             }
         });
 
@@ -3155,17 +3155,17 @@ String aboutMessage = "<html>"
 
         jLabel144.setText("Auto Price ");
 
-        calcButton.setText("Calculate");
-        calcButton.addActionListener(new java.awt.event.ActionListener() {
+        autoLoanCalcButton.setText("Calculate");
+        autoLoanCalcButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AutoLoancalcButtonActionPerformed(evt);
+                AutoLoanautoLoanCalcButtonActionPerformed(evt);
             }
         });
 
-        clearButton.setText("Clear");
-        clearButton.addActionListener(new java.awt.event.ActionListener() {
+        autoLoanClearButton.setText("Clear");
+        autoLoanClearButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AutoLoanclearButtonActionPerformed(evt);
+                AutoLoanautoLoanClearButtonActionPerformed(evt);
             }
         });
 
@@ -3183,7 +3183,7 @@ String aboutMessage = "<html>"
 
         jLabel150.setText("Title, Registration and Other Fees");
 
-        includedFeesAuto.setText("Include All Fees in Loan");
+        autoLoanIncludedFeesAuto.setText("Include All Fees in Loan");
 
         javax.swing.GroupLayout jPanel64Layout = new javax.swing.GroupLayout(jPanel64);
         jPanel64.setLayout(jPanel64Layout);
@@ -3193,9 +3193,9 @@ String aboutMessage = "<html>"
                 .addContainerGap()
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(calcButton, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(autoLoanCalcButton, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(includedFeesAuto, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(autoLoanIncludedFeesAuto, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel145, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel141, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel146, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -3208,17 +3208,17 @@ String aboutMessage = "<html>"
                     .addComponent(jLabel143, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(clearButton, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(salesTaxInput)
-                    .addComponent(loanTermInput)
-                    .addComponent(autoPriceInput)
-                    .addComponent(interestRateInput)
-                    .addComponent(cashIncentivesInput)
-                    .addComponent(downPaymentInput)
-                    .addComponent(amtOwnedInput)
-                    .addComponent(tradeInValueInput)
+                    .addComponent(autoLoanClearButton, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(autoLoanSalesTaxInput)
+                    .addComponent(autoLoanLoanTermInput)
+                    .addComponent(autoLoanAutoPriceInput)
+                    .addComponent(autoLoanInterestRateInput)
+                    .addComponent(autoLoanCashIncentivesInput)
+                    .addComponent(autoLoanDownPaymentInput)
+                    .addComponent(autoLoanAmtOwnedInput)
+                    .addComponent(autoLoanTradeInValueInput)
                     .addComponent(jComboBox28, 0, 167, Short.MAX_VALUE)
-                    .addComponent(otherFeesInput))
+                    .addComponent(autoLoanOtherFeesInput))
                 .addGap(0, 65, Short.MAX_VALUE))
         );
         jPanel64Layout.setVerticalGroup(
@@ -3227,31 +3227,31 @@ String aboutMessage = "<html>"
                 .addGap(9, 9, 9)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel144, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(autoPriceInput))
+                    .addComponent(autoLoanAutoPriceInput))
                 .addGap(3, 3, 3)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel145, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(loanTermInput))
+                    .addComponent(autoLoanLoanTermInput))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel141)
-                    .addComponent(interestRateInput))
+                    .addComponent(autoLoanInterestRateInput))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel142)
-                    .addComponent(cashIncentivesInput))
+                    .addComponent(autoLoanCashIncentivesInput))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel149)
-                    .addComponent(downPaymentInput))
+                    .addComponent(autoLoanDownPaymentInput))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tradeInValueInput)
+                    .addComponent(autoLoanTradeInValueInput)
                     .addComponent(jLabel143))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel146)
-                    .addComponent(amtOwnedInput))
+                    .addComponent(autoLoanAmtOwnedInput))
                 .addGap(9, 9, 9)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel147)
@@ -3259,17 +3259,17 @@ String aboutMessage = "<html>"
                 .addGap(11, 11, 11)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel148)
-                    .addComponent(salesTaxInput))
+                    .addComponent(autoLoanSalesTaxInput))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel150)
-                    .addComponent(otherFeesInput))
+                    .addComponent(autoLoanOtherFeesInput))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(includedFeesAuto)
+                .addComponent(autoLoanIncludedFeesAuto)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(calcButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(clearButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(autoLoanCalcButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(autoLoanClearButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(51, Short.MAX_VALUE))
         );
 
@@ -4271,20 +4271,20 @@ String aboutMessage = "<html>"
         }
     }//GEN-LAST:event_RothIRACalculateBTNActionPerformed
 
-    private void cashIncentivesInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cashIncentivesInputActionPerformed
+    private void autoLoanCashIncentivesInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_autoLoanCashIncentivesInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cashIncentivesInputActionPerformed
+    }//GEN-LAST:event_autoLoanCashIncentivesInputActionPerformed
 
-    private void AutoLoancalcButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AutoLoancalcButtonActionPerformed
-        String autoPriceValue = autoPriceInput.getText();
-        String loanTermValue = loanTermInput.getText();
-        String interestRateValue = interestRateInput.getText();
-        String cashIncentivesValue = cashIncentivesInput.getText();
-        String downPaymentValue = downPaymentInput.getText();
-        String tradeInValueValue = tradeInValueInput.getText();
-        String amtOwnedTradeInValue = amtOwnedInput.getText();
-        String salesTaxValue = salesTaxInput.getText();
-        String otherFeesValue = otherFeesInput.getText();      
+    private void AutoLoanautoLoanCalcButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AutoLoanautoLoanCalcButtonActionPerformed
+        String autoPriceValue = autoLoanAutoPriceInput.getText();
+        String loanTermValue = autoLoanLoanTermInput.getText();
+        String interestRateValue = autoLoanInterestRateInput.getText();
+        String cashIncentivesValue = autoLoanCashIncentivesInput.getText();
+        String downPaymentValue = autoLoanDownPaymentInput.getText();
+        String tradeInValueValue = autoLoanTradeInValueInput.getText();
+        String amtOwnedTradeInValue = autoLoanAmtOwnedInput.getText();
+        String salesTaxValue = autoLoanSalesTaxInput.getText();
+        String otherFeesValue = autoLoanOtherFeesInput.getText();      
         double[] result = Helper.calcAutoLoan(autoPriceValue, loanTermValue, interestRateValue, cashIncentivesValue, downPaymentValue, tradeInValueValue, amtOwnedTradeInValue, salesTaxValue, otherFeesValue);
         if(result[0] == -1 || result[1] == -1){
             resultOutput.setText("");
@@ -4292,29 +4292,29 @@ String aboutMessage = "<html>"
         }
         
         DecimalFormat resultFormat = new DecimalFormat("$#,###.00");
-        if(includedFeesAuto.isSelected()){
+        if(autoLoanIncludedFeesAuto.isSelected()){
             resultOutput.setText(resultFormat.format(result[1]));
         }else{
             resultOutput.setText(resultFormat.format(result[0]));
         }
-    }//GEN-LAST:event_AutoLoancalcButtonActionPerformed
+    }//GEN-LAST:event_AutoLoanautoLoanCalcButtonActionPerformed
 
-    private void AutoLoanclearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AutoLoanclearButtonActionPerformed
+    private void AutoLoanautoLoanClearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AutoLoanautoLoanClearButtonActionPerformed
         // TODO add your handling code here:
         // Clear all input fields
-        autoPriceInput.setText("");
-        loanTermInput.setText("");
-        interestRateInput.setText("");
-        cashIncentivesInput.setText("");
-        downPaymentInput.setText("");
-        tradeInValueInput.setText("");
-        amtOwnedInput.setText("");
-        salesTaxInput.setText("");
-        otherFeesInput.setText("");
+        autoLoanAutoPriceInput.setText("");
+        autoLoanLoanTermInput.setText("");
+        autoLoanInterestRateInput.setText("");
+        autoLoanCashIncentivesInput.setText("");
+        autoLoanDownPaymentInput.setText("");
+        autoLoanTradeInValueInput.setText("");
+        autoLoanAmtOwnedInput.setText("");
+        autoLoanSalesTaxInput.setText("");
+        autoLoanOtherFeesInput.setText("");
 
         // Clear the output field
         resultOutput.setText("");
-    }//GEN-LAST:event_AutoLoanclearButtonActionPerformed
+    }//GEN-LAST:event_AutoLoanautoLoanClearButtonActionPerformed
     
     
     
@@ -4822,23 +4822,27 @@ private void setMessage4() {
     private javax.swing.JButton RothIRAclearBTN;
     private javax.swing.JLabel RothIRAoutput;
     private javax.swing.JTextField RothIRaRetirementAge;
-    private javax.swing.JTextField amtOwnedInput;
     private javax.swing.JButton autoCalculatorBTN4;
-    private javax.swing.JTextField autoPriceInput;
+    private javax.swing.JTextField autoLoanAmtOwnedInput;
+    private javax.swing.JTextField autoLoanAutoPriceInput;
+    private javax.swing.JButton autoLoanCalcButton;
+    private javax.swing.JTextField autoLoanCashIncentivesInput;
+    private javax.swing.JButton autoLoanClearButton;
+    private javax.swing.JTextField autoLoanDownPaymentInput;
+    private javax.swing.JCheckBox autoLoanIncludedFeesAuto;
+    private javax.swing.JTextField autoLoanInterestRateInput;
+    private javax.swing.JTextField autoLoanLoanTermInput;
+    private javax.swing.JTextField autoLoanOtherFeesInput;
+    private javax.swing.JTextField autoLoanSalesTaxInput;
+    private javax.swing.JTextField autoLoanTradeInValueInput;
     private javax.swing.JLabel azusena;
     private javax.swing.JButton btnOtherCalculators;
     private javax.swing.JButton btnfinancialCalculator;
     private javax.swing.JButton btnfitnessCalculator;
     private javax.swing.JButton btnmathCalculator;
-    private javax.swing.JButton calcButton;
-    private javax.swing.JTextField cashIncentivesInput;
-    private javax.swing.JButton clearButton;
     private javax.swing.JButton dashboard;
-    private javax.swing.JTextField downPaymentInput;
     private javax.swing.JPanel downpaymentCalculator;
-    private javax.swing.JCheckBox includedFeesAuto;
     private javax.swing.JTextPane instructionCurrencyCalculator;
-    private javax.swing.JTextField interestRateInput;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -5181,9 +5185,7 @@ private void setMessage4() {
     private javax.swing.JTextField jTextField95;
     private javax.swing.JTextField jTextField99;
     private javax.swing.JLabel jorge;
-    private javax.swing.JTextField loanTermInput;
     private javax.swing.JLabel osvaldo;
-    private javax.swing.JTextField otherFeesInput;
     private javax.swing.JTabbedPane panelCalculator;
     private javax.swing.JLabel pedro;
     private javax.swing.JLabel pinkIcon;
@@ -5192,7 +5194,5 @@ private void setMessage4() {
     private javax.swing.JPanel rentandbuy;
     private javax.swing.JLabel resultOutput;
     private javax.swing.JPanel retirementCalculator3;
-    private javax.swing.JTextField salesTaxInput;
-    private javax.swing.JTextField tradeInValueInput;
     // End of variables declaration//GEN-END:variables
 }

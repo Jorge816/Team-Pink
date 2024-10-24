@@ -4562,9 +4562,9 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="calcButton" min="-2" pref="133" max="-2" attributes="0"/>
+                                          <Component id="autoLoanCalcButton" min="-2" pref="133" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                              <Component id="includedFeesAuto" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="autoLoanIncludedFeesAuto" alignment="0" max="32767" attributes="0"/>
                                               <Component id="jLabel145" max="32767" attributes="0"/>
                                               <Component id="jLabel141" alignment="0" max="32767" attributes="0"/>
                                               <Component id="jLabel146" alignment="0" max="32767" attributes="0"/>
@@ -4580,17 +4580,17 @@
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="clearButton" min="-2" pref="141" max="-2" attributes="0"/>
-                                      <Component id="salesTaxInput" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="loanTermInput" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="autoPriceInput" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="interestRateInput" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="cashIncentivesInput" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="downPaymentInput" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="amtOwnedInput" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="tradeInValueInput" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="autoLoanClearButton" min="-2" pref="141" max="-2" attributes="0"/>
+                                      <Component id="autoLoanSalesTaxInput" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="autoLoanLoanTermInput" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="autoLoanAutoPriceInput" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="autoLoanInterestRateInput" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="autoLoanCashIncentivesInput" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="autoLoanDownPaymentInput" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="autoLoanAmtOwnedInput" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="autoLoanTradeInValueInput" alignment="0" max="32767" attributes="0"/>
                                       <Component id="jComboBox28" alignment="0" pref="167" max="32767" attributes="0"/>
-                                      <Component id="otherFeesInput" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="autoLoanOtherFeesInput" alignment="0" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="0" pref="65" max="32767" attributes="0"/>
                               </Group>
@@ -4602,37 +4602,37 @@
                                   <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel144" alignment="3" max="32767" attributes="0"/>
-                                      <Component id="autoPriceInput" alignment="3" max="32767" attributes="0"/>
+                                      <Component id="autoLoanAutoPriceInput" alignment="3" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel145" alignment="3" max="32767" attributes="0"/>
-                                      <Component id="loanTermInput" alignment="3" max="32767" attributes="0"/>
+                                      <Component id="autoLoanLoanTermInput" alignment="3" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel141" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="interestRateInput" alignment="3" max="32767" attributes="0"/>
+                                      <Component id="autoLoanInterestRateInput" alignment="3" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel142" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="cashIncentivesInput" alignment="3" max="32767" attributes="0"/>
+                                      <Component id="autoLoanCashIncentivesInput" alignment="3" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel149" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="downPaymentInput" alignment="3" max="32767" attributes="0"/>
+                                      <Component id="autoLoanDownPaymentInput" alignment="3" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="tradeInValueInput" alignment="3" max="32767" attributes="0"/>
+                                      <Component id="autoLoanTradeInValueInput" alignment="3" max="32767" attributes="0"/>
                                       <Component id="jLabel143" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel146" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="amtOwnedInput" alignment="3" max="32767" attributes="0"/>
+                                      <Component id="autoLoanAmtOwnedInput" alignment="3" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
@@ -4642,19 +4642,19 @@
                                   <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel148" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="salesTaxInput" alignment="3" max="32767" attributes="0"/>
+                                      <Component id="autoLoanSalesTaxInput" alignment="3" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel150" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="otherFeesInput" alignment="3" max="32767" attributes="0"/>
+                                      <Component id="autoLoanOtherFeesInput" alignment="3" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="includedFeesAuto" min="-2" max="-2" attributes="0"/>
+                                  <Component id="autoLoanIncludedFeesAuto" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="calcButton" alignment="3" max="32767" attributes="0"/>
-                                      <Component id="clearButton" alignment="3" max="32767" attributes="0"/>
+                                      <Component id="autoLoanCalcButton" alignment="3" max="32767" attributes="0"/>
+                                      <Component id="autoLoanClearButton" alignment="3" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace pref="51" max="32767" attributes="0"/>
                               </Group>
@@ -4667,11 +4667,11 @@
                             <Property name="text" type="java.lang.String" value="Interest Rate"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="autoPriceInput">
+                        <Component class="javax.swing.JTextField" name="autoLoanAutoPriceInput">
                         </Component>
-                        <Component class="javax.swing.JTextField" name="cashIncentivesInput">
+                        <Component class="javax.swing.JTextField" name="autoLoanCashIncentivesInput">
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cashIncentivesInputActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="autoLoanCashIncentivesInputActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel142">
@@ -4684,29 +4684,29 @@
                             <Property name="text" type="java.lang.String" value="Trade-in value"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="tradeInValueInput">
+                        <Component class="javax.swing.JTextField" name="autoLoanTradeInValueInput">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel144">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Auto Price "/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="interestRateInput">
+                        <Component class="javax.swing.JTextField" name="autoLoanInterestRateInput">
                         </Component>
-                        <Component class="javax.swing.JButton" name="calcButton">
+                        <Component class="javax.swing.JButton" name="autoLoanCalcButton">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Calculate"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AutoLoancalcButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AutoLoanautoLoanCalcButtonActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="clearButton">
+                        <Component class="javax.swing.JButton" name="autoLoanClearButton">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Clear"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AutoLoanclearButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AutoLoanautoLoanClearButtonActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel145">
@@ -4714,7 +4714,7 @@
                             <Property name="text" type="java.lang.String" value="Loan Term"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="loanTermInput">
+                        <Component class="javax.swing.JTextField" name="autoLoanLoanTermInput">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel146">
                           <Properties>
@@ -4726,9 +4726,9 @@
                             <Property name="text" type="java.lang.String" value="Your State"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="salesTaxInput">
+                        <Component class="javax.swing.JTextField" name="autoLoanSalesTaxInput">
                         </Component>
-                        <Component class="javax.swing.JTextField" name="amtOwnedInput">
+                        <Component class="javax.swing.JTextField" name="autoLoanAmtOwnedInput">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel148">
                           <Properties>
@@ -4740,7 +4740,7 @@
                             <Property name="text" type="java.lang.String" value="Down Payment "/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="downPaymentInput">
+                        <Component class="javax.swing.JTextField" name="autoLoanDownPaymentInput">
                         </Component>
                         <Component class="javax.swing.JComboBox" name="jComboBox28">
                           <Properties>
@@ -4808,9 +4808,9 @@
                             <Property name="text" type="java.lang.String" value="Title, Registration and Other Fees"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="otherFeesInput">
+                        <Component class="javax.swing.JTextField" name="autoLoanOtherFeesInput">
                         </Component>
-                        <Component class="javax.swing.JCheckBox" name="includedFeesAuto">
+                        <Component class="javax.swing.JCheckBox" name="autoLoanIncludedFeesAuto">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Include All Fees in Loan"/>
                           </Properties>
