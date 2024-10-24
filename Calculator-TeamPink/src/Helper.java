@@ -352,6 +352,20 @@ public class Helper {
         
         return monthlyPayment; // Returns the calculated monthly payment
         }
+        
+        
+        public static double[] calcAutoLoan(
+        String autoPriceStr,
+        String loanTermStr,
+        String interestRateStr,
+        String cashIncentivesStr,
+        String downPaymentStr,
+        String tradeInValueStr,
+        String amtOwnedTradeInStr,
+        String salesTaxStr,
+        String otherFeesStr){
+            //
+        }
     
         
         
